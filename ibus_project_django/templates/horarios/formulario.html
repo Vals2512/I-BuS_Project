@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>{{ accion }} Horario</h2>
+<form method="post" class="mt-3">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="btn btn-primary mt-2">
+        {% if accion == 'Editar' %}Actualizar{% else %}Crear{% endif %}
+    </button>
+    <a href="{% url 'lista_horarios' %}" class="btn btn-secondary mt-2">Volver</a>
+</form>
+{% endblock %}

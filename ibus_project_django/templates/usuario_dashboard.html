@@ -1,0 +1,279 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dashboard Usuario - IBuS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        body {
+            background-color: #f0f4fb;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            height: 100vh;
+            overflow: auto;
+        }
+
+        #sidebar {
+            background-color: #0b3d91;
+            color: white;
+            min-height: 100vh;
+            padding: 1.5rem 1rem;
+        }
+
+        #sidebar h4 {
+            font-weight: 700;
+            margin-bottom: 2rem;
+            text-align: center;
+            border-bottom: 2px solid white;
+            padding-bottom: 10px;
+        }
+
+        #sidebar button,
+        #sidebar a.btn {
+            width: 100%;
+            margin-bottom: 1rem;
+            font-weight: 600;
+            background-color: #1457d1;
+            border: none;
+            color: white;
+            transition: background-color 0.3s ease;
+        }
+
+        #sidebar button:hover,
+        #sidebar button.active,
+        #sidebar a.btn:hover {
+            background-color: #0a2a66;
+        }
+
+        #search-barrios {
+            overflow-y: auto;
+            background-color: white;
+            border-radius: 8px;
+            padding: 1rem;
+            box-shadow: 0 4px 12px rgb(0 0 0 / 0.1);
+            height: 100vh;
+        }
+
+        #search-barrios h5 {
+            color: #0b3d91;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            text-align: center;
+        }
+
+        #main-content {
+            background-color: white;
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 6px 18px rgb(0 0 0 / 0.12);
+            min-height: 100vh;
+            overflow-y: auto;
+        }
+
+        #welcome-message {
+            text-align: center;
+            margin-top: 100px;
+            color: #0b3d91;
+        }
+
+        #welcome-message img {
+            width: 150px;
+            margin-bottom: 1.5rem;
+            animation: moverBus 4s linear infinite alternate;
+        }
+
+        @keyframes moverBus {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(25px);
+            }
+        }
+
+        #main-content::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        #main-content::-webkit-scrollbar-thumb {
+            background-color: #0b3d91;
+            border-radius: 4px;
+        }
+
+        #main-content::-webkit-scrollbar-track {
+            background: #f0f4fb;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid h-100">
+        <div class="row h-100 gx-0">
+            <!-- Menú lateral izquierda -->
+            <nav id="sidebar" class="col-md-2 d-flex flex-column">
+                <h4>Menú</h4>
+                <button id="btn-empresas" class="btn" type="button">Empresas</button>
+                <button id="btn-rutas" class="btn" type="button">Rutas</button>
+                <button id="btn-horarios" class="btn" type="button">Horarios</button>
+                <button id="btn-barrios" class="btn" type="button">Barrios</button>
+                <a href="{% url 'logout' %}" class="btn">Cerrar sesión</a>
+                <a href="{% url 'actualizar_cuenta' %}" class="btn">Actualizar Cuenta</a>
+                <a href="{% url 'eliminar_cuenta' %}" class="btn btn-danger">Eliminar Cuenta</a>
+            </nav>
+
+            <!-- Contenido central -->
+            <main id="main-content" class="col-md-7">
+                <div id="welcome-message">
+                    <img src="{% static 'images/bus_animado.gif' %}" alt="Bus animado" />
+                    <h2>Bienvenido a IBuS</h2>
+                    <p>Seleccione una opción del menú para ver la información.</p>
+                </div>
+
+                <div id="contenido-empresas" class="d-none">
+                    <h3 class="mb-4 text-primary">Empresas</h3>
+                    <ul class="list-group shadow-sm">
+                        {% for empresa in empresas %}
+                        <li class="list-group-item">
+                            <strong>{{ empresa.nombreEmpresa }}</strong><br />
+                            Dirección: {{ empresa.direccion }}<br />
+                            Teléfono: {{ empresa.telefono }}
+                        </li>
+                        {% empty %}
+                        <li class="list-group-item">No hay empresas registradas.</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+
+                <div id="contenido-rutas" class="d-none">
+                    <h3 class="mb-4 text-primary">Rutas</h3>
+                    {% if rutas %}
+                    <div class="table-responsive shadow-sm">
+                        <table class="table table-striped table-bordered align-middle">
+                            <thead class="table-primary">
+                                <tr>
+                                    <th>Nombre Ruta</th>
+                                    <th>Empresa</th>
+                                    <th>Barrios</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for ruta in rutas %}
+                                <tr>
+                                    <td>{{ ruta }}</td>
+                                    <td>{{ ruta.idEmpresa.nombreEmpresa }}</td>
+                                    <td>
+                                        {% for barrio in ruta.get_barrios %}
+                                        <span class="badge bg-secondary">{{ barrio.nombreBarrio }}</span>
+                                        {% empty %}
+                                        Sin barrios asignados
+                                        {% endfor %}
+                                    </td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                    {% else %}
+                    <p>No hay rutas para mostrar.</p>
+                    {% endif %}
+                </div>
+
+                <div id="contenido-horarios" class="d-none">
+                    <h3 class="mb-4 text-primary">Horarios</h3>
+                    {% if horarios %}
+                    <ul class="list-group shadow-sm">
+                        {% for horario in horarios %}
+                        <li class="list-group-item">
+                            <strong>{{ horario.idEmpresa.nombreEmpresa }}</strong> - Desde: {{ horario.horaSalida }}
+                            hasta: {{ horario.horaLlegada }}
+                        </li>
+                        {% endfor %}
+                    </ul>
+                    {% else %}
+                    <p>No hay horarios disponibles.</p>
+                    {% endif %}
+                </div>
+
+                <div id="contenido-barrios" class="d-none">
+                    <h3 class="mb-4 text-primary">Barrios</h3>
+                    <ul class="list-group shadow-sm">
+                        {% for barrio in barrios %}
+                        <li class="list-group-item">{{ barrio.nombreBarrio }}</li>
+                        {% empty %}
+                        <li class="list-group-item">No hay barrios registrados.</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </main>
+
+            <!-- Panel derecho: búsqueda -->
+            <aside id="search-barrios" class="col-md-3">
+                <h5>Búsqueda por Barrios</h5>
+                <form id="form-barrios" class="d-flex flex-column gap-2">
+                    <button type="submit" class="btn btn-primary w-100 mb-2">Buscar</button>
+                    <div class="form-check overflow-auto" style="max-height: 80vh;">
+                        {% for checkbox in form.barrios %}
+                        <div class="form-check">
+                            {{ checkbox.tag }}
+                            <label class="form-check-label">{{ checkbox.choice_label }}</label>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </form>
+            </aside>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#sidebar button').click(function () {
+                $('#sidebar button').removeClass('active');
+                $(this).addClass('active');
+                $('#main-content > div').addClass('d-none');
+
+                const idBoton = $(this).attr('id');
+                let contenidoId = '';
+
+                switch (idBoton) {
+                    case 'btn-empresas':
+                        contenidoId = '#contenido-empresas';
+                        break;
+                    case 'btn-rutas':
+                        contenidoId = '#contenido-rutas';
+                        break;
+                    case 'btn-horarios':
+                        contenidoId = '#contenido-horarios';
+                        break;
+                    case 'btn-barrios':
+                        contenidoId = '#contenido-barrios';
+                        break;
+                    default:
+                        contenidoId = '#welcome-message';
+                }
+
+                $(contenidoId).removeClass('d-none');
+            });
+
+            $('#form-barrios').on('submit', function (e) {
+                e.preventDefault();
+
+                // Mantener la vista de rutas filtradas
+                $('#sidebar button').removeClass('active');
+                $('#btn-rutas').addClass('active');
+                $('#main-content > div').addClass('d-none');
+                $('#contenido-rutas').removeClass('d-none');
+
+                this.submit(); // Enviar el formulario al backend
+            });
+        });
+    </script>
+</body>
+
+</html>

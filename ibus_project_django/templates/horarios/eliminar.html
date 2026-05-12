@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>¿Eliminar Horario?</h2>
+<p>¿Estás seguro de que deseas eliminar el horario de <strong>{{ horario.idEmpresa.nombreEmpresa }}</strong> de {{
+    horario.horaSalida }} a {{ horario.horaLlegada }}?</p>
+<form method="post">
+    {% csrf_token %}
+    <button type="submit" class="btn btn-danger">Sí, eliminar</button>
+    <a href="{% url 'lista_horarios' %}" class="btn btn-secondary">Cancelar</a>
+</form>
+{% endblock %}

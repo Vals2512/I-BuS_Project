@@ -1,0 +1,3446 @@
+[
+  {
+    "model": "sistema.tipousuario",
+    "pk": 1,
+    "fields": {
+      "nombreTipo": "Administrador"
+    }
+  },
+  {
+    "model": "sistema.tipousuario",
+    "pk": 2,
+    "fields": {
+      "nombreTipo": "Usuario general"
+    }
+  },
+  {
+    "model": "sistema.empresa",
+    "pk": 1,
+    "fields": {
+      "nombreEmpresa": "TransAvella S.A.",
+      "anioFundacion": 1962,
+      "direccion": "Carrera 27 # 3-45 sur, Sogamoso, Boyacá",
+      "telefono": "(608) 7705511",
+      "cantBuses": 69,
+      "cantConductores": 60
+    }
+  },
+  {
+    "model": "sistema.empresa",
+    "pk": 2,
+    "fields": {
+      "nombreEmpresa": "Flota Sugamuxi",
+      "anioFundacion": 1990,
+      "direccion": "Carrera 11 # 46a-77 Sogamoso, Boyacá",
+      "telefono": "(608) 7702440",
+      "cantBuses": 66,
+      "cantConductores": 53
+    }
+  },
+  {
+    "model": "sistema.empresa",
+    "pk": 3,
+    "fields": {
+      "nombreEmpresa": "Cootradelsol",
+      "anioFundacion": 1973,
+      "direccion": "Carrera 12 # 46-86 Sogamoso, Boyacá",
+      "telefono": "(608) 7700000",
+      "cantBuses": 56,
+      "cantConductores": 45
+    }
+  },
+  {
+    "model": "sistema.empresa",
+    "pk": 4,
+    "fields": {
+      "nombreEmpresa": "Translago",
+      "anioFundacion": 1995,
+      "direccion": "Carrera 23 # 2a-11 Sogamoso, Boyacá",
+      "telefono": "(608) 7714824",
+      "cantBuses": 68,
+      "cantConductores": 60
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 127,
+    "fields": {
+      "nombreBarrio": "El Rosario"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 132,
+    "fields": {
+      "nombreBarrio": "José Antonio Galán"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 137,
+    "fields": {
+      "nombreBarrio": "La Isla"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 149,
+    "fields": {
+      "nombreBarrio": "Magdalena"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 150,
+    "fields": {
+      "nombreBarrio": "Monquirá"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 152,
+    "fields": {
+      "nombreBarrio": "Prado Norte"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 169,
+    "fields": {
+      "nombreBarrio": "Sugamuxi"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 175,
+    "fields": {
+      "nombreBarrio": "Villa del Sol"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 176,
+    "fields": {
+      "nombreBarrio": "Asodea"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 184,
+    "fields": {
+      "nombreBarrio": "La Tolva"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 185,
+    "fields": {
+      "nombreBarrio": "Vallado"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 186,
+    "fields": {
+      "nombreBarrio": "La Ramada"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 187,
+    "fields": {
+      "nombreBarrio": "UPTCa"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 188,
+    "fields": {
+      "nombreBarrio": "Libertador"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 189,
+    "fields": {
+      "nombreBarrio": "Coliseo"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 191,
+    "fields": {
+      "nombreBarrio": "Morca"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 192,
+    "fields": {
+      "nombreBarrio": "Puente Pesca"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 194,
+    "fields": {
+      "nombreBarrio": "Pinares de San Luis"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 195,
+    "fields": {
+      "nombreBarrio": "Playita"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 196,
+    "fields": {
+      "nombreBarrio": "Piedecuesta"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 197,
+    "fields": {
+      "nombreBarrio": "Caleras"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 198,
+    "fields": {
+      "nombreBarrio": "Plaza de Mercado"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 199,
+    "fields": {
+      "nombreBarrio": "Pantanitos"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 200,
+    "fields": {
+      "nombreBarrio": "Chinca"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 201,
+    "fields": {
+      "nombreBarrio": "Nogal"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 202,
+    "fields": {
+      "nombreBarrio": "Barrio El Oriente"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 203,
+    "fields": {
+      "nombreBarrio": "Gustavo Jiménez"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 204,
+    "fields": {
+      "nombreBarrio": "Jardín"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 205,
+    "fields": {
+      "nombreBarrio": "La Libería"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 206,
+    "fields": {
+      "nombreBarrio": "Callejuelas"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 1,
+    "fields": {
+      "nombreBarrio": "Álamos del Sur"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 2,
+    "fields": {
+      "nombreBarrio": "Álvaro González Santana"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 3,
+    "fields": {
+      "nombreBarrio": "Angelmar"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 4,
+    "fields": {
+      "nombreBarrio": "Benjamín Herrera"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 5,
+    "fields": {
+      "nombreBarrio": "Campoamor"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 6,
+    "fields": {
+      "nombreBarrio": "Centro"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 7,
+    "fields": {
+      "nombreBarrio": "Chapinero"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 8,
+    "fields": {
+      "nombreBarrio": "Chicamocha"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 9,
+    "fields": {
+      "nombreBarrio": "Colombia"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 10,
+    "fields": {
+      "nombreBarrio": "El Cortez"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 11,
+    "fields": {
+      "nombreBarrio": "El Diamante"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 12,
+    "fields": {
+      "nombreBarrio": "El Durazno"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 13,
+    "fields": {
+      "nombreBarrio": "El Jardín"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 14,
+    "fields": {
+      "nombreBarrio": "El Laguito"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 15,
+    "fields": {
+      "nombreBarrio": "El Nogal"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 16,
+    "fields": {
+      "nombreBarrio": "El Oriente"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 17,
+    "fields": {
+      "nombreBarrio": "El Prado"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 18,
+    "fields": {
+      "nombreBarrio": "El Recreo"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 19,
+    "fields": {
+      "nombreBarrio": "El Sol"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 20,
+    "fields": {
+      "nombreBarrio": "El Carmen"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 21,
+    "fields": {
+      "nombreBarrio": "Gustavo Jiménez Jiménez"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 22,
+    "fields": {
+      "nombreBarrio": "Jorge Eliécer Gaitán"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 23,
+    "fields": {
+      "nombreBarrio": "Juan José Rondón"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 24,
+    "fields": {
+      "nombreBarrio": "La Castellana"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 25,
+    "fields": {
+      "nombreBarrio": "La Esmeralda"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 26,
+    "fields": {
+      "nombreBarrio": "La Florida"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 27,
+    "fields": {
+      "nombreBarrio": "La Pradera"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 28,
+    "fields": {
+      "nombreBarrio": "La Villita"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 29,
+    "fields": {
+      "nombreBarrio": "Las Acacias"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 30,
+    "fields": {
+      "nombreBarrio": "Las Américas"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 31,
+    "fields": {
+      "nombreBarrio": "Los Alisos"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 32,
+    "fields": {
+      "nombreBarrio": "Los Alpes"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 33,
+    "fields": {
+      "nombreBarrio": "Los Arrayanes"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 34,
+    "fields": {
+      "nombreBarrio": "Los Libertadores"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 35,
+    "fields": {
+      "nombreBarrio": "Los Rosales"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 36,
+    "fields": {
+      "nombreBarrio": "Los Sauces"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 37,
+    "fields": {
+      "nombreBarrio": "Lunapark"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 38,
+    "fields": {
+      "nombreBarrio": "Enrique Olaya Herrera"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 39,
+    "fields": {
+      "nombreBarrio": "Rafael Uribe Uribe"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 40,
+    "fields": {
+      "nombreBarrio": "San Andresito"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 41,
+    "fields": {
+      "nombreBarrio": "San Cristóbal"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 42,
+    "fields": {
+      "nombreBarrio": "San Martín"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 43,
+    "fields": {
+      "nombreBarrio": "San Martín Centro"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 44,
+    "fields": {
+      "nombreBarrio": "Santa Ana Mochacá"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 45,
+    "fields": {
+      "nombreBarrio": "Santa Bárbara"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 46,
+    "fields": {
+      "nombreBarrio": "Santa Catalina"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 47,
+    "fields": {
+      "nombreBarrio": "Santa Helena"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 48,
+    "fields": {
+      "nombreBarrio": "Santa Inés"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 49,
+    "fields": {
+      "nombreBarrio": "San Rafael"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 50,
+    "fields": {
+      "nombreBarrio": "Santa Isabel"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 51,
+    "fields": {
+      "nombreBarrio": "Santa Marta"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 52,
+    "fields": {
+      "nombreBarrio": "Siete de Agosto"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 53,
+    "fields": {
+      "nombreBarrio": "Simón Bolívar"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 54,
+    "fields": {
+      "nombreBarrio": "Sucre"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 55,
+    "fields": {
+      "nombreBarrio": "Universitario"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 56,
+    "fields": {
+      "nombreBarrio": "Rafael Valdés Tavera"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 57,
+    "fields": {
+      "nombreBarrio": "Veinte de Julio"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 58,
+    "fields": {
+      "nombreBarrio": "Venecia"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 59,
+    "fields": {
+      "nombreBarrio": "Villa Blanca"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 60,
+    "fields": {
+      "nombreBarrio": "Villa del Lago"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 61,
+    "fields": {
+      "nombreBarrio": "Valdez Tavera"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 62,
+    "fields": {
+      "nombreBarrio": "La Sierra"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 63,
+    "fields": {
+      "nombreBarrio": "Cataluña"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 64,
+    "fields": {
+      "nombreBarrio": "Alcaravanes"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 65,
+    "fields": {
+      "nombreBarrio": "El Oasis"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 66,
+    "fields": {
+      "nombreBarrio": "Rincón del Cacique"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 67,
+    "fields": {
+      "nombreBarrio": "Laguito"
+    }
+  },
+  {
+    "model": "sistema.barrio",
+    "pk": 68,
+    "fields": {
+      "nombreBarrio": "Siatame"
+    }
+  },
+  {
+    "model": "sistema.horario",
+    "pk": 1,
+    "fields": {
+      "idEmpresa": 1,
+      "horaSalida": "06:00:00",
+      "horaLlegada": "18:00:00"
+    }
+  },
+  {
+    "model": "sistema.horario",
+    "pk": 2,
+    "fields": {
+      "idEmpresa": 2,
+      "horaSalida": "07:00:00",
+      "horaLlegada": "19:00:00"
+    }
+  },
+  {
+    "model": "sistema.horario",
+    "pk": 3,
+    "fields": {
+      "idEmpresa": 3,
+      "horaSalida": "06:30:00",
+      "horaLlegada": "17:30:00"
+    }
+  },
+  {
+    "model": "sistema.horario",
+    "pk": 4,
+    "fields": {
+      "idEmpresa": 4,
+      "horaSalida": "05:30:00",
+      "horaLlegada": "16:30:00"
+    }
+  },
+  {
+    "model": "sistema.ruta",
+    "pk": 38,
+    "fields": {
+      "idEmpresa": 1,
+      "inicioRuta": 175,
+      "destinoRuta": 184,
+      "frecuencia": "5-10 min"
+    }
+  },
+  {
+    "model": "sistema.ruta",
+    "pk": 39,
+    "fields": {
+      "idEmpresa": 1,
+      "inicioRuta": 176,
+      "destinoRuta": 185,
+      "frecuencia": "5-15 min"
+    }
+  },
+  {
+    "model": "sistema.ruta",
+    "pk": 40,
+    "fields": {
+      "idEmpresa": 1,
+      "inicioRuta": 175,
+      "destinoRuta": 186,
+      "frecuencia": "5-10 min"
+    }
+  },
+  {
+    "model": "sistema.ruta",
+    "pk": 41,
+    "fields": {
+      "idEmpresa": 1,
+      "inicioRuta": 187,
+      "destinoRuta": 184,
+      "frecuencia": "5-15 min"
+    }
+  },
+  {
+    "model": "sistema.ruta",
+    "pk": 42,
+    "fields": {
+      "idEmpresa": 1,
+      "inicioRuta": 188,
+      "destinoRuta": 132,
+      "frecuencia": "5-15 min"
+    }
+  },
+  {
+    "model": "sistema.ruta",
+    "pk": 43,
+    "fields": {
+      "idEmpresa": 1,
+      "inicioRuta": 189,
+      "destinoRuta": 192,
+      "frecuencia": "5-10 min"
+    }
+  },
+  {
+    "model": "sistema.ruta",
+    "pk": 44,
+    "fields": {
+      "idEmpresa": 1,
+      "inicioRuta": 185,
+      "destinoRuta": 184,
+      "frecuencia": "5-15 min"
+    }
+  },
+  {
+    "model": "sistema.ruta",
+    "pk": 45,
+    "fields": {
+      "idEmpresa": 1,
+      "inicioRuta": 191,
+      "destinoRuta": 192,
+      "frecuencia": "5-15 min"
+    }
+  },
+  {
+    "model": "sistema.ruta",
+    "pk": 46,
+    "fields": {
+      "idEmpresa": 4,
+      "inicioRuta": 175,
+      "destinoRuta": 127,
+      "frecuencia": "5-10 min"
+    }
+  },
+  {
+    "model": "sistema.ruta",
+    "pk": 47,
+    "fields": {
+      "idEmpresa": 4,
+      "inicioRuta": 187,
+      "destinoRuta": 152,
+      "frecuencia": "5-15 min"
+    }
+  },
+  {
+    "model": "sistema.ruta",
+    "pk": 48,
+    "fields": {
+      "idEmpresa": 4,
+      "inicioRuta": 187,
+      "destinoRuta": 194,
+      "frecuencia": "5-15 min"
+    }
+  },
+  {
+    "model": "sistema.ruta",
+    "pk": 49,
+    "fields": {
+      "idEmpresa": 4,
+      "inicioRuta": 187,
+      "destinoRuta": 195,
+      "frecuencia": "5-10 min"
+    }
+  },
+  {
+    "model": "sistema.ruta",
+    "pk": 50,
+    "fields": {
+      "idEmpresa": 4,
+      "inicioRuta": 196,
+      "destinoRuta": 197,
+      "frecuencia": "5-15 min"
+    }
+  },
+  {
+    "model": "sistema.ruta",
+    "pk": 51,
+    "fields": {
+      "idEmpresa": 4,
+      "inicioRuta": 137,
+      "destinoRuta": 188,
+      "frecuencia": "5-15 min"
+    }
+  },
+  {
+    "model": "sistema.ruta",
+    "pk": 52,
+    "fields": {
+      "idEmpresa": 4,
+      "inicioRuta": 198,
+      "destinoRuta": 199,
+      "frecuencia": "5-15 min"
+    }
+  },
+  {
+    "model": "sistema.ruta",
+    "pk": 53,
+    "fields": {
+      "idEmpresa": 4,
+      "inicioRuta": 200,
+      "destinoRuta": 201,
+      "frecuencia": "5-10 min"
+    }
+  },
+  {
+    "model": "sistema.ruta",
+    "pk": 54,
+    "fields": {
+      "idEmpresa": 4,
+      "inicioRuta": 202,
+      "destinoRuta": 175,
+      "frecuencia": "5-15 min"
+    }
+  },
+  {
+    "model": "sistema.ruta",
+    "pk": 55,
+    "fields": {
+      "idEmpresa": 2,
+      "inicioRuta": 169,
+      "destinoRuta": 203,
+      "frecuencia": "5-10 min"
+    }
+  },
+  {
+    "model": "sistema.ruta",
+    "pk": 56,
+    "fields": {
+      "idEmpresa": 2,
+      "inicioRuta": 169,
+      "destinoRuta": 149,
+      "frecuencia": "5-15 min"
+    }
+  },
+  {
+    "model": "sistema.ruta",
+    "pk": 57,
+    "fields": {
+      "idEmpresa": 2,
+      "inicioRuta": 204,
+      "destinoRuta": 203,
+      "frecuencia": "5-10 min"
+    }
+  },
+  {
+    "model": "sistema.ruta",
+    "pk": 58,
+    "fields": {
+      "idEmpresa": 2,
+      "inicioRuta": 188,
+      "destinoRuta": 201,
+      "frecuencia": "5-15 min"
+    }
+  },
+  {
+    "model": "sistema.ruta",
+    "pk": 59,
+    "fields": {
+      "idEmpresa": 2,
+      "inicioRuta": 192,
+      "destinoRuta": 184,
+      "frecuencia": "5-10 min"
+    }
+  },
+  {
+    "model": "sistema.ruta",
+    "pk": 60,
+    "fields": {
+      "idEmpresa": 2,
+      "inicioRuta": 169,
+      "destinoRuta": 152,
+      "frecuencia": "5-15 min"
+    }
+  },
+  {
+    "model": "sistema.ruta",
+    "pk": 61,
+    "fields": {
+      "idEmpresa": 3,
+      "inicioRuta": 176,
+      "destinoRuta": 150,
+      "frecuencia": "5-15 min"
+    }
+  },
+  {
+    "model": "sistema.ruta",
+    "pk": 62,
+    "fields": {
+      "idEmpresa": 3,
+      "inicioRuta": 176,
+      "destinoRuta": 187,
+      "frecuencia": "5-10 min"
+    }
+  },
+  {
+    "model": "sistema.ruta",
+    "pk": 63,
+    "fields": {
+      "idEmpresa": 3,
+      "inicioRuta": 149,
+      "destinoRuta": 205,
+      "frecuencia": "5-15 min"
+    }
+  },
+  {
+    "model": "sistema.ruta",
+    "pk": 64,
+    "fields": {
+      "idEmpresa": 3,
+      "inicioRuta": 188,
+      "destinoRuta": 201,
+      "frecuencia": "5-10 min"
+    }
+  },
+  {
+    "model": "sistema.ruta",
+    "pk": 65,
+    "fields": {
+      "idEmpresa": 3,
+      "inicioRuta": 206,
+      "destinoRuta": 189,
+      "frecuencia": "5-15 min"
+    }
+  },
+  {
+    "model": "sistema.ruta",
+    "pk": 66,
+    "fields": {
+      "idEmpresa": 3,
+      "inicioRuta": 187,
+      "destinoRuta": 186,
+      "frecuencia": "5-15 min"
+    }
+  },
+  {
+    "model": "sistema.ruta",
+    "pk": 67,
+    "fields": {
+      "idEmpresa": 3,
+      "inicioRuta": 175,
+      "destinoRuta": 169,
+      "frecuencia": "5-10 min"
+    }
+  },
+  {
+    "model": "sistema.rutabarrio",
+    "pk": 1,
+    "fields": {
+      "idRuta": 38,
+      "idBarrio": 175
+    }
+  },
+  {
+    "model": "sistema.rutabarrio",
+    "pk": 2,
+    "fields": {
+      "idRuta": 38,
+      "idBarrio": 184
+    }
+  },
+  {
+    "model": "sistema.rutabarrio",
+    "pk": 3,
+    "fields": {
+      "idRuta": 39,
+      "idBarrio": 176
+    }
+  },
+  {
+    "model": "sistema.rutabarrio",
+    "pk": 4,
+    "fields": {
+      "idRuta": 39,
+      "idBarrio": 185
+    }
+  },
+  {
+    "model": "sistema.rutabarrio",
+    "pk": 5,
+    "fields": {
+      "idRuta": 40,
+      "idBarrio": 175
+    }
+  },
+  {
+    "model": "sistema.rutabarrio",
+    "pk": 6,
+    "fields": {
+      "idRuta": 40,
+      "idBarrio": 186
+    }
+  },
+  {
+    "model": "sistema.rutabarrio",
+    "pk": 7,
+    "fields": {
+      "idRuta": 41,
+      "idBarrio": 187
+    }
+  },
+  {
+    "model": "sistema.rutabarrio",
+    "pk": 8,
+    "fields": {
+      "idRuta": 41,
+      "idBarrio": 184
+    }
+  },
+  {
+    "model": "sistema.rutabarrio",
+    "pk": 9,
+    "fields": {
+      "idRuta": 42,
+      "idBarrio": 188
+    }
+  },
+  {
+    "model": "sistema.rutabarrio",
+    "pk": 10,
+    "fields": {
+      "idRuta": 42,
+      "idBarrio": 132
+    }
+  },
+  {
+    "model": "sistema.rutabarrio",
+    "pk": 11,
+    "fields": {
+      "idRuta": 43,
+      "idBarrio": 189
+    }
+  },
+  {
+    "model": "sistema.rutabarrio",
+    "pk": 12,
+    "fields": {
+      "idRuta": 43,
+      "idBarrio": 192
+    }
+  },
+  {
+    "model": "sistema.rutabarrio",
+    "pk": 13,
+    "fields": {
+      "idRuta": 44,
+      "idBarrio": 185
+    }
+  },
+  {
+    "model": "sistema.rutabarrio",
+    "pk": 14,
+    "fields": {
+      "idRuta": 44,
+      "idBarrio": 184
+    }
+  },
+  {
+    "model": "sistema.rutabarrio",
+    "pk": 15,
+    "fields": {
+      "idRuta": 45,
+      "idBarrio": 191
+    }
+  },
+  {
+    "model": "sistema.rutabarrio",
+    "pk": 16,
+    "fields": {
+      "idRuta": 45,
+      "idBarrio": 192
+    }
+  },
+  {
+    "model": "sistema.rutabarrio",
+    "pk": 17,
+    "fields": {
+      "idRuta": 46,
+      "idBarrio": 175
+    }
+  },
+  {
+    "model": "sistema.rutabarrio",
+    "pk": 18,
+    "fields": {
+      "idRuta": 46,
+      "idBarrio": 127
+    }
+  },
+  {
+    "model": "sistema.rutabarrio",
+    "pk": 19,
+    "fields": {
+      "idRuta": 47,
+      "idBarrio": 187
+    }
+  },
+  {
+    "model": "sistema.rutabarrio",
+    "pk": 20,
+    "fields": {
+      "idRuta": 47,
+      "idBarrio": 152
+    }
+  },
+  {
+    "model": "sistema.rutabarrio",
+    "pk": 21,
+    "fields": {
+      "idRuta": 48,
+      "idBarrio": 187
+    }
+  },
+  {
+    "model": "sistema.rutabarrio",
+    "pk": 22,
+    "fields": {
+      "idRuta": 48,
+      "idBarrio": 194
+    }
+  },
+  {
+    "model": "sistema.rutabarrio",
+    "pk": 23,
+    "fields": {
+      "idRuta": 49,
+      "idBarrio": 187
+    }
+  },
+  {
+    "model": "sistema.rutabarrio",
+    "pk": 24,
+    "fields": {
+      "idRuta": 49,
+      "idBarrio": 195
+    }
+  },
+  {
+    "model": "sistema.rutabarrio",
+    "pk": 25,
+    "fields": {
+      "idRuta": 50,
+      "idBarrio": 196
+    }
+  },
+  {
+    "model": "sistema.rutabarrio",
+    "pk": 26,
+    "fields": {
+      "idRuta": 50,
+      "idBarrio": 197
+    }
+  },
+  {
+    "model": "sistema.rutabarrio",
+    "pk": 27,
+    "fields": {
+      "idRuta": 51,
+      "idBarrio": 137
+    }
+  },
+  {
+    "model": "sistema.rutabarrio",
+    "pk": 28,
+    "fields": {
+      "idRuta": 51,
+      "idBarrio": 188
+    }
+  },
+  {
+    "model": "sistema.rutabarrio",
+    "pk": 29,
+    "fields": {
+      "idRuta": 52,
+      "idBarrio": 198
+    }
+  },
+  {
+    "model": "sistema.rutabarrio",
+    "pk": 30,
+    "fields": {
+      "idRuta": 52,
+      "idBarrio": 199
+    }
+  },
+  {
+    "model": "sistema.rutabarrio",
+    "pk": 31,
+    "fields": {
+      "idRuta": 53,
+      "idBarrio": 200
+    }
+  },
+  {
+    "model": "sistema.rutabarrio",
+    "pk": 32,
+    "fields": {
+      "idRuta": 53,
+      "idBarrio": 201
+    }
+  },
+  {
+    "model": "sistema.rutabarrio",
+    "pk": 33,
+    "fields": {
+      "idRuta": 54,
+      "idBarrio": 202
+    }
+  },
+  {
+    "model": "sistema.rutabarrio",
+    "pk": 34,
+    "fields": {
+      "idRuta": 54,
+      "idBarrio": 175
+    }
+  },
+  {
+    "model": "sistema.rutabarrio",
+    "pk": 35,
+    "fields": {
+      "idRuta": 55,
+      "idBarrio": 169
+    }
+  },
+  {
+    "model": "sistema.rutabarrio",
+    "pk": 36,
+    "fields": {
+      "idRuta": 55,
+      "idBarrio": 203
+    }
+  },
+  {
+    "model": "sistema.rutabarrio",
+    "pk": 37,
+    "fields": {
+      "idRuta": 56,
+      "idBarrio": 169
+    }
+  },
+  {
+    "model": "sistema.rutabarrio",
+    "pk": 38,
+    "fields": {
+      "idRuta": 56,
+      "idBarrio": 149
+    }
+  },
+  {
+    "model": "sistema.rutabarrio",
+    "pk": 39,
+    "fields": {
+      "idRuta": 57,
+      "idBarrio": 204
+    }
+  },
+  {
+    "model": "sistema.rutabarrio",
+    "pk": 40,
+    "fields": {
+      "idRuta": 57,
+      "idBarrio": 203
+    }
+  },
+  {
+    "model": "sistema.rutabarrio",
+    "pk": 41,
+    "fields": {
+      "idRuta": 58,
+      "idBarrio": 188
+    }
+  },
+  {
+    "model": "sistema.rutabarrio",
+    "pk": 42,
+    "fields": {
+      "idRuta": 58,
+      "idBarrio": 201
+    }
+  },
+  {
+    "model": "sistema.rutabarrio",
+    "pk": 43,
+    "fields": {
+      "idRuta": 59,
+      "idBarrio": 192
+    }
+  },
+  {
+    "model": "sistema.rutabarrio",
+    "pk": 44,
+    "fields": {
+      "idRuta": 59,
+      "idBarrio": 184
+    }
+  },
+  {
+    "model": "sistema.rutabarrio",
+    "pk": 45,
+    "fields": {
+      "idRuta": 60,
+      "idBarrio": 169
+    }
+  },
+  {
+    "model": "sistema.rutabarrio",
+    "pk": 46,
+    "fields": {
+      "idRuta": 60,
+      "idBarrio": 152
+    }
+  },
+  {
+    "model": "sistema.rutabarrio",
+    "pk": 47,
+    "fields": {
+      "idRuta": 61,
+      "idBarrio": 176
+    }
+  },
+  {
+    "model": "sistema.rutabarrio",
+    "pk": 48,
+    "fields": {
+      "idRuta": 61,
+      "idBarrio": 150
+    }
+  },
+  {
+    "model": "sistema.rutabarrio",
+    "pk": 49,
+    "fields": {
+      "idRuta": 62,
+      "idBarrio": 176
+    }
+  },
+  {
+    "model": "sistema.rutabarrio",
+    "pk": 50,
+    "fields": {
+      "idRuta": 62,
+      "idBarrio": 187
+    }
+  },
+  {
+    "model": "sistema.rutabarrio",
+    "pk": 51,
+    "fields": {
+      "idRuta": 63,
+      "idBarrio": 149
+    }
+  },
+  {
+    "model": "sistema.rutabarrio",
+    "pk": 52,
+    "fields": {
+      "idRuta": 63,
+      "idBarrio": 205
+    }
+  },
+  {
+    "model": "sistema.rutabarrio",
+    "pk": 53,
+    "fields": {
+      "idRuta": 64,
+      "idBarrio": 188
+    }
+  },
+  {
+    "model": "sistema.rutabarrio",
+    "pk": 54,
+    "fields": {
+      "idRuta": 64,
+      "idBarrio": 201
+    }
+  },
+  {
+    "model": "sistema.rutabarrio",
+    "pk": 55,
+    "fields": {
+      "idRuta": 65,
+      "idBarrio": 206
+    }
+  },
+  {
+    "model": "sistema.rutabarrio",
+    "pk": 56,
+    "fields": {
+      "idRuta": 65,
+      "idBarrio": 189
+    }
+  },
+  {
+    "model": "sistema.rutabarrio",
+    "pk": 57,
+    "fields": {
+      "idRuta": 66,
+      "idBarrio": 187
+    }
+  },
+  {
+    "model": "sistema.rutabarrio",
+    "pk": 58,
+    "fields": {
+      "idRuta": 66,
+      "idBarrio": 186
+    }
+  },
+  {
+    "model": "sistema.rutabarrio",
+    "pk": 59,
+    "fields": {
+      "idRuta": 67,
+      "idBarrio": 175
+    }
+  },
+  {
+    "model": "sistema.rutabarrio",
+    "pk": 60,
+    "fields": {
+      "idRuta": 67,
+      "idBarrio": 169
+    }
+  },
+  {
+    "model": "sistema.tiempo",
+    "pk": 21,
+    "fields": {
+      "fecha": "2025-05-26"
+    }
+  },
+  {
+    "model": "sistema.tiempo",
+    "pk": 22,
+    "fields": {
+      "fecha": "2025-05-27"
+    }
+  },
+  {
+    "model": "sistema.tiempo",
+    "pk": 23,
+    "fields": {
+      "fecha": "2025-05-28"
+    }
+  },
+  {
+    "model": "sistema.tiempo",
+    "pk": 24,
+    "fields": {
+      "fecha": "2025-05-29"
+    }
+  },
+  {
+    "model": "sistema.tiempo",
+    "pk": 25,
+    "fields": {
+      "fecha": "2025-05-30"
+    }
+  },
+  {
+    "model": "sistema.tiempo",
+    "pk": 26,
+    "fields": {
+      "fecha": "2025-05-31"
+    }
+  },
+  {
+    "model": "sistema.tiempo",
+    "pk": 27,
+    "fields": {
+      "fecha": "2025-06-01"
+    }
+  },
+  {
+    "model": "sistema.tiempo",
+    "pk": 28,
+    "fields": {
+      "fecha": "2025-06-02"
+    }
+  },
+  {
+    "model": "sistema.tiempo",
+    "pk": 29,
+    "fields": {
+      "fecha": "2025-06-03"
+    }
+  },
+  {
+    "model": "sistema.tiempo",
+    "pk": 30,
+    "fields": {
+      "fecha": "2025-06-04"
+    }
+  },
+  {
+    "model": "sistema.tiempo",
+    "pk": 31,
+    "fields": {
+      "fecha": "2025-06-05"
+    }
+  },
+  {
+    "model": "sistema.tiempo",
+    "pk": 32,
+    "fields": {
+      "fecha": "2025-06-06"
+    }
+  },
+  {
+    "model": "sistema.tiempo",
+    "pk": 33,
+    "fields": {
+      "fecha": "2025-06-07"
+    }
+  },
+  {
+    "model": "sistema.tiempo",
+    "pk": 34,
+    "fields": {
+      "fecha": "2025-06-08"
+    }
+  },
+  {
+    "model": "sistema.tiempo",
+    "pk": 35,
+    "fields": {
+      "fecha": "2025-06-09"
+    }
+  },
+  {
+    "model": "sistema.tiempo",
+    "pk": 36,
+    "fields": {
+      "fecha": "2025-06-10"
+    }
+  },
+  {
+    "model": "sistema.tiempo",
+    "pk": 37,
+    "fields": {
+      "fecha": "2025-06-11"
+    }
+  },
+  {
+    "model": "sistema.tiempo",
+    "pk": 38,
+    "fields": {
+      "fecha": "2025-06-12"
+    }
+  },
+  {
+    "model": "sistema.tiempo",
+    "pk": 39,
+    "fields": {
+      "fecha": "2025-06-13"
+    }
+  },
+  {
+    "model": "sistema.tiempo",
+    "pk": 40,
+    "fields": {
+      "fecha": "2025-06-14"
+    }
+  },
+  {
+    "model": "sistema.tiempo",
+    "pk": 41,
+    "fields": {
+      "fecha": "2025-06-15"
+    }
+  },
+  {
+    "model": "sistema.tiempo",
+    "pk": 42,
+    "fields": {
+      "fecha": "2025-06-16"
+    }
+  },
+  {
+    "model": "sistema.tiempo",
+    "pk": 43,
+    "fields": {
+      "fecha": "2025-06-17"
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 1,
+    "fields": {
+      "cantidadPasajeros": 284,
+      "idRuta": 38,
+      "idTiempo": 21
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 2,
+    "fields": {
+      "cantidadPasajeros": 200,
+      "idRuta": 38,
+      "idTiempo": 22
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 3,
+    "fields": {
+      "cantidadPasajeros": 143,
+      "idRuta": 38,
+      "idTiempo": 23
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 4,
+    "fields": {
+      "cantidadPasajeros": 193,
+      "idRuta": 38,
+      "idTiempo": 24
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 5,
+    "fields": {
+      "cantidadPasajeros": 166,
+      "idRuta": 38,
+      "idTiempo": 25
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 6,
+    "fields": {
+      "cantidadPasajeros": 254,
+      "idRuta": 38,
+      "idTiempo": 26
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 7,
+    "fields": {
+      "cantidadPasajeros": 112,
+      "idRuta": 38,
+      "idTiempo": 27
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 8,
+    "fields": {
+      "cantidadPasajeros": 152,
+      "idRuta": 38,
+      "idTiempo": 28
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 9,
+    "fields": {
+      "cantidadPasajeros": 112,
+      "idRuta": 38,
+      "idTiempo": 29
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 10,
+    "fields": {
+      "cantidadPasajeros": 234,
+      "idRuta": 38,
+      "idTiempo": 30
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 11,
+    "fields": {
+      "cantidadPasajeros": 260,
+      "idRuta": 39,
+      "idTiempo": 21
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 12,
+    "fields": {
+      "cantidadPasajeros": 123,
+      "idRuta": 39,
+      "idTiempo": 22
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 13,
+    "fields": {
+      "cantidadPasajeros": 241,
+      "idRuta": 39,
+      "idTiempo": 23
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 14,
+    "fields": {
+      "cantidadPasajeros": 249,
+      "idRuta": 39,
+      "idTiempo": 24
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 15,
+    "fields": {
+      "cantidadPasajeros": 248,
+      "idRuta": 39,
+      "idTiempo": 25
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 16,
+    "fields": {
+      "cantidadPasajeros": 115,
+      "idRuta": 39,
+      "idTiempo": 26
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 17,
+    "fields": {
+      "cantidadPasajeros": 206,
+      "idRuta": 39,
+      "idTiempo": 27
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 18,
+    "fields": {
+      "cantidadPasajeros": 273,
+      "idRuta": 39,
+      "idTiempo": 28
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 19,
+    "fields": {
+      "cantidadPasajeros": 145,
+      "idRuta": 39,
+      "idTiempo": 29
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 20,
+    "fields": {
+      "cantidadPasajeros": 118,
+      "idRuta": 39,
+      "idTiempo": 30
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 21,
+    "fields": {
+      "cantidadPasajeros": 274,
+      "idRuta": 40,
+      "idTiempo": 21
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 22,
+    "fields": {
+      "cantidadPasajeros": 261,
+      "idRuta": 40,
+      "idTiempo": 22
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 23,
+    "fields": {
+      "cantidadPasajeros": 275,
+      "idRuta": 40,
+      "idTiempo": 23
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 24,
+    "fields": {
+      "cantidadPasajeros": 180,
+      "idRuta": 40,
+      "idTiempo": 24
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 25,
+    "fields": {
+      "cantidadPasajeros": 178,
+      "idRuta": 40,
+      "idTiempo": 25
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 26,
+    "fields": {
+      "cantidadPasajeros": 164,
+      "idRuta": 40,
+      "idTiempo": 26
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 27,
+    "fields": {
+      "cantidadPasajeros": 218,
+      "idRuta": 40,
+      "idTiempo": 27
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 28,
+    "fields": {
+      "cantidadPasajeros": 222,
+      "idRuta": 40,
+      "idTiempo": 28
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 29,
+    "fields": {
+      "cantidadPasajeros": 278,
+      "idRuta": 40,
+      "idTiempo": 29
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 30,
+    "fields": {
+      "cantidadPasajeros": 271,
+      "idRuta": 40,
+      "idTiempo": 30
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 31,
+    "fields": {
+      "cantidadPasajeros": 181,
+      "idRuta": 41,
+      "idTiempo": 21
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 32,
+    "fields": {
+      "cantidadPasajeros": 147,
+      "idRuta": 41,
+      "idTiempo": 22
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 33,
+    "fields": {
+      "cantidadPasajeros": 200,
+      "idRuta": 41,
+      "idTiempo": 23
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 34,
+    "fields": {
+      "cantidadPasajeros": 118,
+      "idRuta": 41,
+      "idTiempo": 24
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 35,
+    "fields": {
+      "cantidadPasajeros": 197,
+      "idRuta": 41,
+      "idTiempo": 25
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 36,
+    "fields": {
+      "cantidadPasajeros": 131,
+      "idRuta": 41,
+      "idTiempo": 26
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 37,
+    "fields": {
+      "cantidadPasajeros": 100,
+      "idRuta": 41,
+      "idTiempo": 27
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 38,
+    "fields": {
+      "cantidadPasajeros": 102,
+      "idRuta": 41,
+      "idTiempo": 28
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 39,
+    "fields": {
+      "cantidadPasajeros": 264,
+      "idRuta": 41,
+      "idTiempo": 29
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 40,
+    "fields": {
+      "cantidadPasajeros": 274,
+      "idRuta": 41,
+      "idTiempo": 30
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 41,
+    "fields": {
+      "cantidadPasajeros": 284,
+      "idRuta": 42,
+      "idTiempo": 21
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 42,
+    "fields": {
+      "cantidadPasajeros": 276,
+      "idRuta": 42,
+      "idTiempo": 22
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 43,
+    "fields": {
+      "cantidadPasajeros": 128,
+      "idRuta": 42,
+      "idTiempo": 23
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 44,
+    "fields": {
+      "cantidadPasajeros": 164,
+      "idRuta": 42,
+      "idTiempo": 24
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 45,
+    "fields": {
+      "cantidadPasajeros": 204,
+      "idRuta": 42,
+      "idTiempo": 25
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 46,
+    "fields": {
+      "cantidadPasajeros": 300,
+      "idRuta": 42,
+      "idTiempo": 26
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 47,
+    "fields": {
+      "cantidadPasajeros": 181,
+      "idRuta": 42,
+      "idTiempo": 27
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 48,
+    "fields": {
+      "cantidadPasajeros": 197,
+      "idRuta": 42,
+      "idTiempo": 28
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 49,
+    "fields": {
+      "cantidadPasajeros": 163,
+      "idRuta": 42,
+      "idTiempo": 29
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 50,
+    "fields": {
+      "cantidadPasajeros": 125,
+      "idRuta": 42,
+      "idTiempo": 30
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 51,
+    "fields": {
+      "cantidadPasajeros": 182,
+      "idRuta": 43,
+      "idTiempo": 21
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 52,
+    "fields": {
+      "cantidadPasajeros": 252,
+      "idRuta": 43,
+      "idTiempo": 22
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 53,
+    "fields": {
+      "cantidadPasajeros": 202,
+      "idRuta": 43,
+      "idTiempo": 23
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 54,
+    "fields": {
+      "cantidadPasajeros": 114,
+      "idRuta": 43,
+      "idTiempo": 24
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 55,
+    "fields": {
+      "cantidadPasajeros": 187,
+      "idRuta": 43,
+      "idTiempo": 25
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 56,
+    "fields": {
+      "cantidadPasajeros": 293,
+      "idRuta": 43,
+      "idTiempo": 26
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 57,
+    "fields": {
+      "cantidadPasajeros": 240,
+      "idRuta": 43,
+      "idTiempo": 27
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 58,
+    "fields": {
+      "cantidadPasajeros": 238,
+      "idRuta": 43,
+      "idTiempo": 28
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 59,
+    "fields": {
+      "cantidadPasajeros": 249,
+      "idRuta": 43,
+      "idTiempo": 29
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 60,
+    "fields": {
+      "cantidadPasajeros": 194,
+      "idRuta": 43,
+      "idTiempo": 30
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 61,
+    "fields": {
+      "cantidadPasajeros": 149,
+      "idRuta": 44,
+      "idTiempo": 21
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 62,
+    "fields": {
+      "cantidadPasajeros": 125,
+      "idRuta": 44,
+      "idTiempo": 22
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 63,
+    "fields": {
+      "cantidadPasajeros": 218,
+      "idRuta": 44,
+      "idTiempo": 23
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 64,
+    "fields": {
+      "cantidadPasajeros": 107,
+      "idRuta": 44,
+      "idTiempo": 24
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 65,
+    "fields": {
+      "cantidadPasajeros": 293,
+      "idRuta": 44,
+      "idTiempo": 25
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 66,
+    "fields": {
+      "cantidadPasajeros": 145,
+      "idRuta": 44,
+      "idTiempo": 26
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 67,
+    "fields": {
+      "cantidadPasajeros": 106,
+      "idRuta": 44,
+      "idTiempo": 27
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 68,
+    "fields": {
+      "cantidadPasajeros": 128,
+      "idRuta": 44,
+      "idTiempo": 28
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 69,
+    "fields": {
+      "cantidadPasajeros": 299,
+      "idRuta": 44,
+      "idTiempo": 29
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 70,
+    "fields": {
+      "cantidadPasajeros": 116,
+      "idRuta": 44,
+      "idTiempo": 30
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 71,
+    "fields": {
+      "cantidadPasajeros": 168,
+      "idRuta": 45,
+      "idTiempo": 21
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 72,
+    "fields": {
+      "cantidadPasajeros": 251,
+      "idRuta": 45,
+      "idTiempo": 22
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 73,
+    "fields": {
+      "cantidadPasajeros": 108,
+      "idRuta": 45,
+      "idTiempo": 23
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 74,
+    "fields": {
+      "cantidadPasajeros": 217,
+      "idRuta": 45,
+      "idTiempo": 24
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 75,
+    "fields": {
+      "cantidadPasajeros": 202,
+      "idRuta": 45,
+      "idTiempo": 25
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 76,
+    "fields": {
+      "cantidadPasajeros": 207,
+      "idRuta": 45,
+      "idTiempo": 26
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 77,
+    "fields": {
+      "cantidadPasajeros": 163,
+      "idRuta": 45,
+      "idTiempo": 27
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 78,
+    "fields": {
+      "cantidadPasajeros": 297,
+      "idRuta": 45,
+      "idTiempo": 28
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 79,
+    "fields": {
+      "cantidadPasajeros": 113,
+      "idRuta": 45,
+      "idTiempo": 29
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 80,
+    "fields": {
+      "cantidadPasajeros": 262,
+      "idRuta": 45,
+      "idTiempo": 30
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 81,
+    "fields": {
+      "cantidadPasajeros": 167,
+      "idRuta": 46,
+      "idTiempo": 21
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 82,
+    "fields": {
+      "cantidadPasajeros": 232,
+      "idRuta": 46,
+      "idTiempo": 22
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 83,
+    "fields": {
+      "cantidadPasajeros": 215,
+      "idRuta": 46,
+      "idTiempo": 23
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 84,
+    "fields": {
+      "cantidadPasajeros": 102,
+      "idRuta": 46,
+      "idTiempo": 24
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 85,
+    "fields": {
+      "cantidadPasajeros": 245,
+      "idRuta": 46,
+      "idTiempo": 25
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 86,
+    "fields": {
+      "cantidadPasajeros": 117,
+      "idRuta": 46,
+      "idTiempo": 26
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 87,
+    "fields": {
+      "cantidadPasajeros": 196,
+      "idRuta": 46,
+      "idTiempo": 27
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 88,
+    "fields": {
+      "cantidadPasajeros": 230,
+      "idRuta": 46,
+      "idTiempo": 28
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 89,
+    "fields": {
+      "cantidadPasajeros": 144,
+      "idRuta": 46,
+      "idTiempo": 29
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 90,
+    "fields": {
+      "cantidadPasajeros": 244,
+      "idRuta": 46,
+      "idTiempo": 30
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 91,
+    "fields": {
+      "cantidadPasajeros": 284,
+      "idRuta": 47,
+      "idTiempo": 21
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 92,
+    "fields": {
+      "cantidadPasajeros": 226,
+      "idRuta": 47,
+      "idTiempo": 22
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 93,
+    "fields": {
+      "cantidadPasajeros": 202,
+      "idRuta": 47,
+      "idTiempo": 23
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 94,
+    "fields": {
+      "cantidadPasajeros": 222,
+      "idRuta": 47,
+      "idTiempo": 24
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 95,
+    "fields": {
+      "cantidadPasajeros": 155,
+      "idRuta": 47,
+      "idTiempo": 25
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 96,
+    "fields": {
+      "cantidadPasajeros": 236,
+      "idRuta": 47,
+      "idTiempo": 26
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 97,
+    "fields": {
+      "cantidadPasajeros": 194,
+      "idRuta": 47,
+      "idTiempo": 27
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 98,
+    "fields": {
+      "cantidadPasajeros": 138,
+      "idRuta": 47,
+      "idTiempo": 28
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 99,
+    "fields": {
+      "cantidadPasajeros": 216,
+      "idRuta": 47,
+      "idTiempo": 29
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 100,
+    "fields": {
+      "cantidadPasajeros": 123,
+      "idRuta": 47,
+      "idTiempo": 30
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 101,
+    "fields": {
+      "cantidadPasajeros": 34,
+      "idRuta": 38,
+      "idTiempo": 21
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 102,
+    "fields": {
+      "cantidadPasajeros": 70,
+      "idRuta": 38,
+      "idTiempo": 28
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 103,
+    "fields": {
+      "cantidadPasajeros": 55,
+      "idRuta": 38,
+      "idTiempo": 35
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 104,
+    "fields": {
+      "cantidadPasajeros": 45,
+      "idRuta": 39,
+      "idTiempo": 22
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 105,
+    "fields": {
+      "cantidadPasajeros": 21,
+      "idRuta": 39,
+      "idTiempo": 29
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 106,
+    "fields": {
+      "cantidadPasajeros": 49,
+      "idRuta": 39,
+      "idTiempo": 37
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 107,
+    "fields": {
+      "cantidadPasajeros": 67,
+      "idRuta": 40,
+      "idTiempo": 23
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 108,
+    "fields": {
+      "cantidadPasajeros": 80,
+      "idRuta": 40,
+      "idTiempo": 30
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 109,
+    "fields": {
+      "cantidadPasajeros": 60,
+      "idRuta": 40,
+      "idTiempo": 38
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 110,
+    "fields": {
+      "cantidadPasajeros": 12,
+      "idRuta": 41,
+      "idTiempo": 24
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 111,
+    "fields": {
+      "cantidadPasajeros": 64,
+      "idRuta": 41,
+      "idTiempo": 31
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 112,
+    "fields": {
+      "cantidadPasajeros": 52,
+      "idRuta": 41,
+      "idTiempo": 40
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 113,
+    "fields": {
+      "cantidadPasajeros": 88,
+      "idRuta": 42,
+      "idTiempo": 25
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 114,
+    "fields": {
+      "cantidadPasajeros": 36,
+      "idRuta": 42,
+      "idTiempo": 32
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 115,
+    "fields": {
+      "cantidadPasajeros": 49,
+      "idRuta": 42,
+      "idTiempo": 39
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 116,
+    "fields": {
+      "cantidadPasajeros": 22,
+      "idRuta": 43,
+      "idTiempo": 26
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 117,
+    "fields": {
+      "cantidadPasajeros": 59,
+      "idRuta": 43,
+      "idTiempo": 33
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 118,
+    "fields": {
+      "cantidadPasajeros": 45,
+      "idRuta": 43,
+      "idTiempo": 41
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 119,
+    "fields": {
+      "cantidadPasajeros": 56,
+      "idRuta": 44,
+      "idTiempo": 27
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 120,
+    "fields": {
+      "cantidadPasajeros": 46,
+      "idRuta": 44,
+      "idTiempo": 34
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 121,
+    "fields": {
+      "cantidadPasajeros": 39,
+      "idRuta": 44,
+      "idTiempo": 42
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 122,
+    "fields": {
+      "cantidadPasajeros": 49,
+      "idRuta": 45,
+      "idTiempo": 28
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 123,
+    "fields": {
+      "cantidadPasajeros": 25,
+      "idRuta": 45,
+      "idTiempo": 35
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 124,
+    "fields": {
+      "cantidadPasajeros": 41,
+      "idRuta": 45,
+      "idTiempo": 43
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 125,
+    "fields": {
+      "cantidadPasajeros": 31,
+      "idRuta": 46,
+      "idTiempo": 29
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 126,
+    "fields": {
+      "cantidadPasajeros": 55,
+      "idRuta": 46,
+      "idTiempo": 36
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 127,
+    "fields": {
+      "cantidadPasajeros": 38,
+      "idRuta": 46,
+      "idTiempo": 37
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 128,
+    "fields": {
+      "cantidadPasajeros": 77,
+      "idRuta": 47,
+      "idTiempo": 30
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 129,
+    "fields": {
+      "cantidadPasajeros": 68,
+      "idRuta": 47,
+      "idTiempo": 37
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 130,
+    "fields": {
+      "cantidadPasajeros": 54,
+      "idRuta": 47,
+      "idTiempo": 42
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 131,
+    "fields": {
+      "cantidadPasajeros": 54,
+      "idRuta": 48,
+      "idTiempo": 31
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 132,
+    "fields": {
+      "cantidadPasajeros": 40,
+      "idRuta": 48,
+      "idTiempo": 38
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 133,
+    "fields": {
+      "cantidadPasajeros": 60,
+      "idRuta": 48,
+      "idTiempo": 41
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 134,
+    "fields": {
+      "cantidadPasajeros": 39,
+      "idRuta": 49,
+      "idTiempo": 32
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 135,
+    "fields": {
+      "cantidadPasajeros": 62,
+      "idRuta": 49,
+      "idTiempo": 39
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 136,
+    "fields": {
+      "cantidadPasajeros": 58,
+      "idRuta": 49,
+      "idTiempo": 43
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 137,
+    "fields": {
+      "cantidadPasajeros": 18,
+      "idRuta": 50,
+      "idTiempo": 33
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 138,
+    "fields": {
+      "cantidadPasajeros": 28,
+      "idRuta": 50,
+      "idTiempo": 40
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 139,
+    "fields": {
+      "cantidadPasajeros": 50,
+      "idRuta": 50,
+      "idTiempo": 42
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 140,
+    "fields": {
+      "cantidadPasajeros": 63,
+      "idRuta": 51,
+      "idTiempo": 34
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 141,
+    "fields": {
+      "cantidadPasajeros": 49,
+      "idRuta": 51,
+      "idTiempo": 41
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 142,
+    "fields": {
+      "cantidadPasajeros": 35,
+      "idRuta": 51,
+      "idTiempo": 43
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 143,
+    "fields": {
+      "cantidadPasajeros": 27,
+      "idRuta": 52,
+      "idTiempo": 35
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 144,
+    "fields": {
+      "cantidadPasajeros": 37,
+      "idRuta": 52,
+      "idTiempo": 42
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 145,
+    "fields": {
+      "cantidadPasajeros": 40,
+      "idRuta": 52,
+      "idTiempo": 43
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 146,
+    "fields": {
+      "cantidadPasajeros": 72,
+      "idRuta": 53,
+      "idTiempo": 36
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 147,
+    "fields": {
+      "cantidadPasajeros": 83,
+      "idRuta": 53,
+      "idTiempo": 43
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 148,
+    "fields": {
+      "cantidadPasajeros": 60,
+      "idRuta": 53,
+      "idTiempo": 41
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 149,
+    "fields": {
+      "cantidadPasajeros": 41,
+      "idRuta": 54,
+      "idTiempo": 37
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 150,
+    "fields": {
+      "cantidadPasajeros": 50,
+      "idRuta": 54,
+      "idTiempo": 21
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 151,
+    "fields": {
+      "cantidadPasajeros": 45,
+      "idRuta": 54,
+      "idTiempo": 39
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 152,
+    "fields": {
+      "cantidadPasajeros": 58,
+      "idRuta": 55,
+      "idTiempo": 38
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 153,
+    "fields": {
+      "cantidadPasajeros": 66,
+      "idRuta": 55,
+      "idTiempo": 22
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 154,
+    "fields": {
+      "cantidadPasajeros": 49,
+      "idRuta": 55,
+      "idTiempo": 40
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 155,
+    "fields": {
+      "cantidadPasajeros": 33,
+      "idRuta": 56,
+      "idTiempo": 39
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 156,
+    "fields": {
+      "cantidadPasajeros": 30,
+      "idRuta": 56,
+      "idTiempo": 23
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 157,
+    "fields": {
+      "cantidadPasajeros": 42,
+      "idRuta": 56,
+      "idTiempo": 41
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 158,
+    "fields": {
+      "cantidadPasajeros": 60,
+      "idRuta": 57,
+      "idTiempo": 40
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 159,
+    "fields": {
+      "cantidadPasajeros": 57,
+      "idRuta": 57,
+      "idTiempo": 24
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 160,
+    "fields": {
+      "cantidadPasajeros": 37,
+      "idRuta": 57,
+      "idTiempo": 42
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 161,
+    "fields": {
+      "cantidadPasajeros": 29,
+      "idRuta": 58,
+      "idTiempo": 41
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 162,
+    "fields": {
+      "cantidadPasajeros": 43,
+      "idRuta": 58,
+      "idTiempo": 25
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 163,
+    "fields": {
+      "cantidadPasajeros": 36,
+      "idRuta": 58,
+      "idTiempo": 43
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 164,
+    "fields": {
+      "cantidadPasajeros": 85,
+      "idRuta": 59,
+      "idTiempo": 42
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 165,
+    "fields": {
+      "cantidadPasajeros": 50,
+      "idRuta": 59,
+      "idTiempo": 39
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 166,
+    "fields": {
+      "cantidadPasajeros": 44,
+      "idRuta": 59,
+      "idTiempo": 37
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 167,
+    "fields": {
+      "cantidadPasajeros": 47,
+      "idRuta": 60,
+      "idTiempo": 43
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 168,
+    "fields": {
+      "cantidadPasajeros": 55,
+      "idRuta": 60,
+      "idTiempo": 38
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 169,
+    "fields": {
+      "cantidadPasajeros": 41,
+      "idRuta": 60,
+      "idTiempo": 21
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 170,
+    "fields": {
+      "cantidadPasajeros": 52,
+      "idRuta": 61,
+      "idTiempo": 21
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 171,
+    "fields": {
+      "cantidadPasajeros": 30,
+      "idRuta": 61,
+      "idTiempo": 33
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 172,
+    "fields": {
+      "cantidadPasajeros": 40,
+      "idRuta": 61,
+      "idTiempo": 39
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 173,
+    "fields": {
+      "cantidadPasajeros": 19,
+      "idRuta": 62,
+      "idTiempo": 22
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 174,
+    "fields": {
+      "cantidadPasajeros": 35,
+      "idRuta": 62,
+      "idTiempo": 35
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 175,
+    "fields": {
+      "cantidadPasajeros": 42,
+      "idRuta": 62,
+      "idTiempo": 41
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 176,
+    "fields": {
+      "cantidadPasajeros": 75,
+      "idRuta": 63,
+      "idTiempo": 23
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 177,
+    "fields": {
+      "cantidadPasajeros": 44,
+      "idRuta": 63,
+      "idTiempo": 37
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 178,
+    "fields": {
+      "cantidadPasajeros": 38,
+      "idRuta": 63,
+      "idTiempo": 42
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 179,
+    "fields": {
+      "cantidadPasajeros": 61,
+      "idRuta": 64,
+      "idTiempo": 24
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 180,
+    "fields": {
+      "cantidadPasajeros": 40,
+      "idRuta": 64,
+      "idTiempo": 40
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 181,
+    "fields": {
+      "cantidadPasajeros": 33,
+      "idRuta": 64,
+      "idTiempo": 43
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 182,
+    "fields": {
+      "cantidadPasajeros": 44,
+      "idRuta": 65,
+      "idTiempo": 25
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 183,
+    "fields": {
+      "cantidadPasajeros": 38,
+      "idRuta": 65,
+      "idTiempo": 26
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 184,
+    "fields": {
+      "cantidadPasajeros": 29,
+      "idRuta": 65,
+      "idTiempo": 27
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 185,
+    "fields": {
+      "cantidadPasajeros": 38,
+      "idRuta": 66,
+      "idTiempo": 26
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 186,
+    "fields": {
+      "cantidadPasajeros": 52,
+      "idRuta": 66,
+      "idTiempo": 34
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 187,
+    "fields": {
+      "cantidadPasajeros": 41,
+      "idRuta": 66,
+      "idTiempo": 42
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 188,
+    "fields": {
+      "cantidadPasajeros": 53,
+      "idRuta": 67,
+      "idTiempo": 27
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 189,
+    "fields": {
+      "cantidadPasajeros": 47,
+      "idRuta": 67,
+      "idTiempo": 33
+    }
+  },
+  {
+    "model": "sistema.detalleruta",
+    "pk": 190,
+    "fields": {
+      "cantidadPasajeros": 40,
+      "idRuta": 67,
+      "idTiempo": 38
+    }
+  },
+  {
+    "model": "sistema.usuario",
+    "pk": 1,
+    "fields": {
+      "idTipoUsuario": 1,
+      "email": "admin@ibus.com",
+      "contrasena": "admin123"
+    }
+  }
+]

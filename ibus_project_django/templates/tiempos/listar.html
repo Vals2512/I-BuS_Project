@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Lista de tiempos</h2>
+<a href="{% url 'crear_tiempo' %}" class="btn btn-success mb-3">Agregar Tiempo</a>
+<table class="table table-bordered">
+    <tr>
+        <th>ID</th>
+        <th>Fecha</th>
+        <th>Día Semana</th>
+        <th>Semana</th>
+        <th>Mes</th>
+        <th>Acciones</th>
+    </tr>
+    {% for tiempo in tiempos %}
+    <tr>
+        <td>{{ tiempo.idTiempo }}</td>
+        <td>{{ tiempo.fecha }}</td>
+        <td>{{ tiempo.diaSemana }}</td>
+        <td>{{ tiempo.numeroSemana }}</td>
+        <td>{{ tiempo.mes }}</td>
+        <td>
+            <a href="{% url 'editar_tiempo' tiempo.idTiempo %}" class="btn btn-primary btn-sm">Editar</a>
+            <a href="{% url 'eliminar_tiempo' tiempo.idTiempo %}" class="btn btn-danger btn-sm">Eliminar</a>
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}

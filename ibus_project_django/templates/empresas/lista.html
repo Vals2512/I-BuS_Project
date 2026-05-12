@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Empresas registradas</h2>
+<a href="{% url 'admin_dashboard' %}" class="btn btn-secondary mb-3">Volver al Panel</a>
+<a href="{% url 'crear_empresa' %}" class="btn btn-success mb-3">Nueva Empresa</a>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Teléfono</th>
+            <th>Dirección</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for empresa in empresas %}
+        <tr>
+            <td>{{ empresa.nombreEmpresa }}</td>
+            <td>{{ empresa.telefono }}</td>
+            <td>{{ empresa.direccion }}</td>
+            <td>
+                <a href="{% url 'editar_empresa' empresa.idEmpresa %}" class="btn btn-sm btn-primary">Editar</a>
+                <a href="{% url 'eliminar_empresa' empresa.idEmpresa %}" class="btn btn-sm btn-danger">Eliminar</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

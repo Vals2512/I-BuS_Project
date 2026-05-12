@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1 class="mb-4 text-center">Lista de Barrios</h1>
+
+    <div class="d-flex justify-content-between mb-3">
+        <a href="{% url 'admin_dashboard' %}" class="btn btn-secondary">Volver al Panel</a>
+        <a href="{% url 'crear_barrio' %}" class="btn btn-primary">Agregar Barrio</a>
+    </div>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Nombre del Barrio</th>
+                <th>Rutas Asociadas</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for barrio in barrios %}
+            <tr>
+                <td>{{ barrio.nombreBarrio }}</td>
+                <td>
+                    {% for relacion in barrio.rutabarrio_set.all %}
+                    {% with ruta=relacion.idRuta %}
+                    {{ ruta.idEmpresa.nombreEmpresa }}: {{ ruta.inicioRuta }} → {{ ruta.destinoRuta }}<br>
+                    <br>
+                    {% endwith %}
+                    {% empty %}
+                    <span class="text-muted">Ninguna</span>
+                    {% endfor %}
+                </td>
+                <td>
+                    <a href="{% url 'editar_barrio' barrio.idBarrio %}" class="btn btn-sm btn-warning">Editar</a>
+                    <a href="{% url 'eliminar_barrio' barrio.idBarrio %}" class="btn btn-sm btn-danger">Eliminar</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}
