@@ -1,1 +1,191 @@
-<p>buscar-rutas works!</p>
+<div class="w-full h-screen bg-[#D5E1ED] flex flex-col relative font-roboto overflow-hidden">
+  
+  <!-- Map Background (Pure SVG matching mockup streets and routes) -->
+  <div class="absolute inset-0 z-0">
+    <svg class="w-full h-full" viewBox="0 0 800 1000" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <!-- Grid/Land background -->
+      <rect width="100%" height="100%" fill="#E5EDF4" />
+      
+      <!-- Streets / Blocks (Grey layout) -->
+      <path d="M0,150 L800,250 M0,300 L800,420 M0,550 L800,680 M0,750 L800,880" stroke="#CAD4DF" stroke-width="45" stroke-linecap="square"/>
+      <path d="M150,0 L250,1000 M450,0 L520,1000 M650,0 L720,1000 M300,0 L380,1000" stroke="#CAD4DF" stroke-width="35" stroke-linecap="square"/>
+      
+      <!-- Minor streets -->
+      <path d="M100,200 L300,400 M500,400 L700,650 M100,700 L400,950" stroke="#D1DBE5" stroke-width="20"/>
+
+      <!-- Text labels for streets -->
+      <text x="220" y="80" fill="#7C8B9E" font-size="12" font-weight="bold" transform="rotate(78 220 80)">Carrera 26</text>
+      <text x="320" y="320" fill="#7C8B9E" font-size="12" font-weight="bold" transform="rotate(75 320 320)">Carrera 17</text>
+      <text x="470" y="620" fill="#7C8B9E" font-size="12" font-weight="bold" transform="rotate(80 470 620)">Carrera 18</text>
+      <text x="80" y="280" fill="#7C8B9E" font-size="12" font-weight="bold" transform="rotate(8 80 280)">Calle 12</text>
+      <text x="580" y="580" fill="#7C8B9E" font-size="12" font-weight="bold" transform="rotate(10 580 580)">Calle 4 Sur</text>
+
+      <!-- Recent visited landmark (Green Tree Icon) -->
+      <circle cx="280" cy="500" r="16" fill="#10B981" />
+      <!-- Tree drawing -->
+      <path d="M280,490 L274,498 H278 V508 H282 V498 H286 Z" fill="white"/>
+      <text x="305" y="495" fill="#047857" font-size="13" font-weight="bold">Fundación Colombia Somos Música</text>
+      <text x="305" y="512" fill="#065F46" font-size="11">Visitados recientemente</text>
+
+      <!-- Active Bus Route Line (Bold Blue line as in mockup) -->
+      <path d="M680,240 L520,380 L380,510 L300,580 L420,620 L480,680" stroke="#175AA5" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+      <path d="M680,240 L520,380 L380,510 L300,580 L420,620 L480,680" stroke="#2563EB" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+
+      <!-- Destination Marker (Red pin with dot) -->
+      <g transform="translate(420, 620)">
+        <!-- Outer glow -->
+        <circle cx="0" cy="-20" r="15" fill="#EF4444" opacity="0.3"/>
+        <!-- Map Pin SVG -->
+        <path d="M0,0 C-10,-10 -15,-20 -15,-30 C-15,-40 -7,-48 0,-48 C7,-48 15,-40 15,-30 C15,-20 10,-10 0,0 Z" fill="#EF4444" />
+        <circle cx="0" cy="-30" r="6" fill="white" />
+        <!-- Label "La U" -->
+        <rect x="-20" y="-68" width="40" height="18" rx="4" fill="#F59E0B" />
+        <text x="0" y="-55" fill="white" font-size="10" font-weight="bold" text-anchor="middle">La U</text>
+      </g>
+
+      <!-- Origin Marker (Blue circle) -->
+      <circle cx="680" cy="240" r="10" fill="#175AA5" stroke="white" stroke-width="2" />
+    </svg>
+  </div>
+
+  <!-- Floating Search Box (Origin & Destination) -->
+  <div class="absolute top-6 left-1/2 -translate-x-1/2 w-[90%] max-w-[400px] bg-white rounded-2xl shadow-xl p-4 z-10 flex items-center gap-4">
+    <!-- Connecting dashed line -->
+    <div class="flex flex-col items-center justify-between h-[66px] py-1">
+      <div class="w-3 h-3 rounded-full border-2 border-ibus-light-blue bg-white"></div>
+      <div class="w-0.5 h-full border-l-2 border-dashed border-gray-300"></div>
+      <div class="w-3 h-3 bg-ibus-light-blue"></div>
+    </div>
+    
+    <!-- Input Fields -->
+    <form [formGroup]="buscarForm" class="flex-1 flex flex-col gap-2">
+      <!-- Origin -->
+      <div class="w-full bg-[#F3F4F6] rounded-lg h-9 flex items-center px-3">
+        <input formControlName="origen" type="text" placeholder="Origen" (click)="buscarRuta()"
+          class="w-full bg-transparent text-gray-800 font-roboto text-[13px] focus:outline-none placeholder-gray-400">
+      </div>
+      <!-- Destination -->
+      <div class="w-full bg-[#F3F4F6] rounded-lg h-9 flex items-center px-3">
+        <input formControlName="destino" type="text" placeholder="Destino" (click)="buscarRuta()"
+          class="w-full bg-transparent text-gray-800 font-roboto text-[13px] focus:outline-none placeholder-gray-400">
+      </div>
+    </form>
+  </div>
+
+  <!-- Floating Re-center Target Button -->
+  <button (click)="buscarRuta()" class="absolute bottom-[96px] right-6 w-12 h-12 bg-white rounded-full shadow-lg border border-gray-100 flex items-center justify-center text-ibus-light-blue hover:text-ibus-yellow active:scale-95 transition-all z-10">
+    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm-9 4h3m12 0h3m-9-9v3m0 12v3" />
+    </svg>
+  </button>
+
+  <!-- Bottom Navigation Bar (Floating Card) -->
+  <div class="absolute bottom-6 left-1/2 -translate-x-1/2 w-[90%] max-w-[400px] bg-white rounded-2xl shadow-xl px-8 py-3 z-10 flex justify-between items-center">
+    
+    <!-- Perfil Link -->
+    <a routerLink="/auth/perfil" class="flex flex-col items-center gap-1 text-gray-400 hover:text-ibus-light-blue transition-colors cursor-pointer">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+      </svg>
+      <span class="font-inter text-[11px] font-bold">Perfil</span>
+    </a>
+
+    <!-- Mapa Link (Active) -->
+    <a routerLink="/usuario/buscar-rutas" class="flex flex-col items-center gap-1 text-ibus-light-blue transition-colors cursor-pointer">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+      </svg>
+      <span class="font-inter text-[11px] font-bold">Mapa</span>
+    </a>
+
+    <!-- Ajustes Link -->
+    <a routerLink="/usuario/dashboard" class="flex flex-col items-center gap-1 text-gray-400 hover:text-ibus-light-blue transition-colors cursor-pointer">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+        <circle cx="12" cy="12" r="3" />
+      </svg>
+      <span class="font-inter text-[11px] font-bold">Ajustes</span>
+    </a>
+
+  </div>
+
+  <!-- Bottom Route Details Sheet (Slide Up Panel) -->
+  <div class="absolute bottom-0 left-0 w-full bg-white rounded-t-[30px] shadow-2xl z-20 transition-transform duration-300 ease-out"
+    [ngClass]="mostrarDetalleRuta ? 'translate-y-0' : 'translate-y-full'">
+    
+    <!-- Top indicator line to close -->
+    <div (click)="cerrarDetalle()" class="w-full flex justify-center py-3 cursor-pointer">
+      <div class="w-12 h-1 bg-gray-300 rounded-full"></div>
+    </div>
+
+    <!-- Sheet Content -->
+    <div class="px-6 pb-10 w-full max-w-[480px] mx-auto">
+      
+      <!-- Route Title / Info Row -->
+      <div class="flex justify-between items-center mb-6">
+        <div class="flex flex-col">
+          <h2 class="font-inter font-bold text-[20px] text-gray-900 leading-tight">Ruta Universitaria</h2>
+          <span class="font-inter text-[13px] text-gray-500 mt-1">Operado por Cootradelsol</span>
+          <span class="font-inter text-[12px] text-gray-400">05:00 am - 07:30 pm</span>
+        </div>
+        
+        <!-- Bus Icon in Card -->
+        <div class="w-14 h-14 bg-[#F3F4F6] rounded-xl flex items-center justify-center border border-gray-200">
+          <svg width="40" height="40" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g fill="#EF4444">
+              <!-- Red Bus Icon -->
+              <path d="M25,35 C25,32 28,30 32,30 H68 C72,30 75,32 75,35 V62 C75,64 72,66 68,66 H32 C28,66 25,64 25,62 Z" />
+              <rect x="29" y="34" width="42" height="12" fill="white" />
+              <circle cx="34" cy="56" r="3.5" fill="#F9B233" />
+              <circle cx="66" cy="56" r="3.5" fill="#F9B233" />
+              <rect x="42" y="54" width="16" height="4" rx="1" fill="white" />
+              <rect x="30" y="66" width="7" height="6" rx="1.5" fill="#175AA5" />
+              <rect x="63" y="66" width="7" height="6" rx="1.5" fill="#175AA5" />
+            </g>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Info Columns (Tiempo, Costo, Frecuencia) -->
+      <div class="grid grid-cols-3 gap-3 w-full">
+        
+        <!-- Tiempo -->
+        <div class="bg-[#F8F9FA] rounded-xl p-3 border border-gray-100 flex flex-col items-center justify-center">
+          <div class="text-ibus-light-blue mb-1">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <span class="font-inter text-[10px] text-gray-400 font-bold uppercase tracking-wider">Tiempo</span>
+          <span class="font-inter font-bold text-[14px] text-gray-900 mt-0.5">15 min</span>
+        </div>
+
+        <!-- Costo -->
+        <div class="bg-[#F8F9FA] rounded-xl p-3 border border-gray-100 flex flex-col items-center justify-center">
+          <div class="text-[#10B981] mb-1">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M12 16c1.657 0 3-.895 3-2s-1.343-2-3-2-3-.895-3-2 1.343-2 3-2m0 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M12 16c1.657 0 3-.895 3-2s-1.343-2-3-2-3-.895-3-2 1.343-2 3-2" />
+            </svg>
+          </div>
+          <span class="font-inter text-[10px] text-gray-400 font-bold uppercase tracking-wider">Costo</span>
+          <span class="font-inter font-bold text-[14px] text-gray-900 mt-0.5">$ 2.400</span>
+        </div>
+
+        <!-- Frecuencia -->
+        <div class="bg-[#F8F9FA] rounded-xl p-3 border border-gray-100 flex flex-col items-center justify-center">
+          <div class="text-[#F59E0B] mb-1">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 1121.21 8H17" />
+            </svg>
+          </div>
+          <span class="font-inter text-[10px] text-gray-400 font-bold uppercase tracking-wider">Frecuencia</span>
+          <span class="font-inter font-bold text-[14px] text-gray-900 mt-0.5">10 min</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
