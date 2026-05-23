@@ -1,0 +1,68 @@
+<div class="min-h-screen flex flex-col justify-center items-center bg-ibus-bg-blue relative overflow-hidden p-4">
+
+    <div
+        class="absolute top-0 left-0 w-full h-[40vh] bg-gradient-to-b from-ibus-light-blue to-ibus-blue rounded-b-[40px] md:rounded-b-[80px] z-0 shadow-lg">
+    </div>
+
+    <div class="z-10 mb-6 flex flex-col items-center gap-2">
+        <div
+            class="w-24 h-24 bg-white rounded-full flex items-center justify-center shadow-md border-4 border-ibus-yellow font-barlow font-extrabold text-ibus-blue text-2xl tracking-tighter">
+            I-BuS
+        </div>
+    </div>
+
+    <div
+        class="z-10 bg-ibus-blue rounded-[20px] p-6 md:p-8 w-full max-w-[412px] flex flex-col items-center gap-6 shadow-2xl border border-ibus-blue">
+
+        <h1 class="font-barlow font-extrabold text-[30px] leading-[36px] text-ibus-yellow tracking-normal text-center">
+            Iniciar Sesión
+        </h1>
+
+        <form class="w-full flex flex-col gap-5">
+
+            <div class="relative w-full border border-ibus-gray rounded bg-transparent p-3 flex items-center gap-3">
+                <span class="text-ibus-gray text-xl">✉</span>
+                <div class="flex-1 flex flex-col">
+                    <label
+                        class="absolute -top-2.5 left-8 bg-ibus-blue px-1.5 text-[12px] font-bold text-ibus-gray tracking-[0.4px] font-roboto">
+                        Correo Electrónico
+                    </label>
+                    <input type="email" placeholder="ejemplo@correo.com"
+                        class="w-full bg-transparent text-ibus-gray focus:outline-none placeholder-ibus-gray/30 text-[16px] font-roboto">
+                </div>
+            </div>
+
+            <div class="relative w-full border border-ibus-gray rounded bg-transparent p-3 flex items-center gap-3">
+                <span class="text-ibus-gray text-xl">🔒</span>
+                <div class="flex-1 flex flex-col">
+                    <label
+                        class="absolute -top-2.5 left-8 bg-ibus-blue px-1.5 text-[12px] font-bold text-ibus-gray tracking-[0.4px] font-roboto">
+                        Contraseña
+                    </label>
+                    <input type="password" placeholder="********"
+                        class="w-full bg-transparent text-ibus-gray focus:outline-none placeholder-ibus-gray/30 text-[16px] font-roboto">
+                </div>
+            </div>
+
+            <div class="flex justify-between items-center w-full font-inter text-[12px] mt-1">
+                <label class="flex items-center gap-2 cursor-pointer text-ibus-gray">
+                    <input type="checkbox"
+                        class="w-4 h-4 rounded border-ibus-gray bg-transparent text-ibus-yellow focus:ring-0">
+                    <span>Recordarme</span>
+                </label>
+                <a href="#" class="font-bold text-ibus-yellow hover:underline text-right">¿Olvidaste tu contraseña?</a>
+            </div>
+
+            <button type="submit"
+                class="w-full bg-ibus-yellow text-ibus-blue font-roboto font-medium text-[14px] leading-[20px] tracking-[0.1px] rounded-[12px] py-3.5 px-6 hover:bg-opacity-90 active:scale-95 transition-all shadow-md font-bold mt-2">
+                Ingresar
+            </button>
+
+        </form>
+
+        <p class="font-inter text-[12px] text-ibus-gray text-center mt-2">
+            ¿No tienes una cuenta aún? <a href="#" class="text-ibus-yellow font-bold hover:underline">Regístrate</a>
+        </p>
+
+    </div>
+</div>
