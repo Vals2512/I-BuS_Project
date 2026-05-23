@@ -27,7 +27,7 @@ class BarrioRepository:
         self.db = db
         
     def get_all(self):
-        return self.db.query(BarrioDB).all()
+        return self.db.query(BarrioDB).order_by(BarrioDB.nombreBarrio.asc()).all()
 
 class RutaRepository:
     def __init__(self, db: Session):
