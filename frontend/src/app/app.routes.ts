@@ -1,8 +1,12 @@
 import { Routes } from '@angular/router';
-import { Login } from './auth/login/login';
+import { LoginComponent } from './features/auth/login/login';
+import { RegistroComponent } from './features/auth/registro/registro';
+import { PerfilComponent } from './features/auth/perfil/perfil';
 
 export const routes: Routes = [
-    { path: '', component: Login },
-    { path: 'login', component: Login },
-    { path: '**', redirectTo: '' }
+    { path: '', redirectTo: 'auth/login', pathMatch: 'full' },
+    { path: 'auth/login', component: LoginComponent },
+    { path: 'auth/registro', component: RegistroComponent },
+    { path: 'auth/perfil', component: PerfilComponent },
+    { path: '**', redirectTo: 'auth/login' }
 ];
