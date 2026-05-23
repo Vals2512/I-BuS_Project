@@ -1,8 +1,9 @@
+from app.domain.models import Barrio, Empresa, Ruta, Horario, Tiempo, RutaCalcularRequest, RutaCalcularResponse
+from app.application.routing import calcular_ruta_optima
 from fastapi import FastAPI, Depends, HTTPException
 from sqlalchemy.orm import Session
 from typing import List
 from app.infrastructure.database import get_db
-from app.domain.models import Barrio, Empresa, Ruta, Horario, Tiempo
 from app.application.use_cases import (
     listar_barrios, listar_empresas,
     crear_ruta, actualizar_ruta,
@@ -56,4 +57,15 @@ def put_tiempo(id_tiempo: int, tiempo: Tiempo, db: Session = Depends(get_db)):
     resultado = actualizar_tiempo(db, id_tiempo, tiempo)
     if not resultado:
         raise HTTPException(status_code=404, detail="Tiempo no encontrado")
+    return resultado
+
+# --- ENDPOINT CÁLCULO DE RUTA ---
+@app.post("/api/rutas/calcular", response_model=RutaCalcularResponse)
+def post_calcular_ruta(request: RutaCalcularRequest, db: Session = Depends(get_db)):
+    resultado = calcular_ruta_optima(db, request.origen_id, request.destino_id)
+    if resultado is None:
+        raise HTTPException(
+            status_code=404, 
+            detail="No se encontró una combinación de rutas de transporte público que conecte el origen y destino seleccionados."
+        )
     return resultado
