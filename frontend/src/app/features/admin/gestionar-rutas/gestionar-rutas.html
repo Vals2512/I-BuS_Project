@@ -29,9 +29,22 @@
     
     <div class="w-full max-w-[420px] mx-auto flex flex-col">
       <!-- Title -->
-      <h1 class="font-barlow font-extrabold text-[26px] text-ibus-yellow text-center mb-6 tracking-wide md:text-[30px]">
+      <h1 class="font-barlow font-extrabold text-[26px] text-ibus-yellow text-center mb-4 tracking-wide md:text-[30px]">
         Gestionar Rutas
       </h1>
+
+      <!-- Sub-management Links -->
+      <div class="flex flex-wrap justify-center gap-2 mb-6 w-full max-w-[420px] mx-auto text-[12px]">
+        <a routerLink="/admin/rutas/horarios" class="px-4 py-1.5 rounded-full border border-white/25 hover:bg-white/5 text-white/90 font-bold transition-all cursor-pointer">
+          Horarios
+        </a>
+        <a routerLink="/admin/rutas/tiempos" class="px-4 py-1.5 rounded-full border border-white/25 hover:bg-white/5 text-white/90 font-bold transition-all cursor-pointer">
+          Tiempos/Fechas
+        </a>
+        <a routerLink="/admin/rutas/detalle" class="px-4 py-1.5 rounded-full border border-white/25 hover:bg-white/5 text-white/90 font-bold transition-all cursor-pointer">
+          Detalle Pasajeros
+        </a>
+      </div>
 
       <form [formGroup]="rutaForm" (ngSubmit)="onSubmit()" class="flex flex-col gap-6 w-full">
         

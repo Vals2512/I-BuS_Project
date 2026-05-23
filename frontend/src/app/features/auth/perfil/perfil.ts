@@ -1,15 +1,31 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
 import { Router, RouterModule } from '@angular/router';
+import { CommonModule } from '@angular/common';
 import { AuthService } from '../auth.service';
 
 @Component({
   selector: 'app-perfil',
   templateUrl: './perfil.html',
-  imports: [ReactiveFormsModule, RouterModule]
+  standalone: true,
+  imports: [CommonModule, ReactiveFormsModule, RouterModule]
 })
 export class PerfilComponent implements OnInit {
   perfilForm!: FormGroup;
+
+  favoritos = [
+    { tipo: 'casa', nombre: 'Casa', direccion: 'Calle 10 # 5-20' },
+    { tipo: 'trabajo', nombre: 'Trabajo', direccion: 'Avenida El Dorado # 60-15' },
+    { tipo: 'trabajo', nombre: 'Universidad', direccion: 'Carrera 30 # 45-03' },
+    { tipo: 'casa', nombre: 'Casa de Abuela', direccion: 'Transversal 5 # 78-12' }
+  ];
+
+  historial = [
+    { ruta: 'Ruta 1 - Circular Norte', tiempo: 'Hace 5 min' },
+    { ruta: 'Ruta 5 - Expreso Sur', tiempo: 'Ayer' },
+    { ruta: 'Ruta 10 - Transversal', tiempo: 'Hace 3 días' },
+    { ruta: 'Ruta 3 - Alimentador', tiempo: 'Hace 1 semana' }
+  ];
 
   constructor(
     private fb: FormBuilder,
@@ -35,7 +51,6 @@ export class PerfilComponent implements OnInit {
 
   onCerrarSesion(): void {
     console.log('Cerrando sesión...');
-    // Aquí puedes limpiar tokens de localStorage si existieran
     this.router.navigate(['/auth/login']);
   }
 

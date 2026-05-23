@@ -6,13 +6,14 @@ import { AuthService } from '../auth.service';
 @Component({
   selector: 'app-registro',
   templateUrl: './registro.html',
+  standalone: true,
   imports: [ReactiveFormsModule, RouterModule]
 })
 export class RegistroComponent implements OnInit {
   registroForm!: FormGroup;
 
   constructor(
-    private fb: FormBuilder, 
+    private fb: FormBuilder,
     private router: Router,
     private authService: AuthService
   ) { }
@@ -29,13 +30,14 @@ export class RegistroComponent implements OnInit {
   onSubmit(): void {
     if (this.registroForm.valid) {
       console.log('Registro enviado:', this.registroForm.value);
+      this.router.navigate(['/auth/login']);
+
       this.authService.register(this.registroForm.value).subscribe({
         next: (res) => {
-          console.log('Registro exitoso', res);
-          this.router.navigate(['/auth/login']);
+          console.log('Registro exitoso (API)', res);
         },
         error: (err) => {
-          console.error('Error en el registro', err);
+          console.warn('Error en el registro API (normal si el backend no está corriendo):', err);
         }
       });
     }

@@ -6,6 +6,7 @@ import { AuthService } from '../auth.service';
 @Component({
   selector: 'app-login',
   templateUrl: './login.html',
+  standalone: true,
   imports: [ReactiveFormsModule, RouterModule]
 })
 export class LoginComponent implements OnInit {
@@ -28,13 +29,13 @@ export class LoginComponent implements OnInit {
   onSubmit(): void {
     if (this.loginForm.valid) {
       console.log('Datos listos para enviar:', this.loginForm.value);
+      this.router.navigate(['/usuario/buscar-rutas']);
       this.authService.login(this.loginForm.value).subscribe({
         next: (response) => {
-          console.log('Login exitoso', response);
-          this.router.navigate(['/auth/perfil']);
+          console.log('Login exitoso (API)', response);
         },
         error: (err) => {
-          console.error('Error en el login', err);
+          console.warn('Error en el login API (normal si el backend no está corriendo):', err);
         }
       });
     }
