@@ -1,5 +1,5 @@
 from pydantic import BaseModel
-from typing import Optional
+from typing import Optional, List
 
 class TipoUsuario(BaseModel):
     id: Optional[int]
@@ -78,3 +78,15 @@ class RutaBarrio(BaseModel):
     
     class Config:
         from_attributes = True
+
+class RutaCalcularRequest(BaseModel):
+    origen_id: int
+    destino_id: int
+class TramoRuta(BaseModel):
+    barrio_id: int
+    nombre_barrio: str
+    ruta_id: Optional[int] = None
+    nombre_ruta: Optional[str] = None
+class RutaCalcularResponse(BaseModel):
+    total_tramos: int
+    camino: List[TramoRuta]
