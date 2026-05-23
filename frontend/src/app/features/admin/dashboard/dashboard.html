@@ -1,1 +1,122 @@
-<p>dashboard works!</p>
+<div class="w-full min-h-screen bg-ibus-blue flex flex-col relative font-roboto text-white">
+  
+  <!-- Top White Area (Full Width) -->
+  <div class="bg-white pt-10 pb-4 w-full relative md:pt-16">
+    <div class="relative w-full max-w-[420px] mx-auto flex justify-center items-center px-6">
+      <!-- Back Arrow -->
+      <a routerLink="/auth/login" class="absolute left-6 cursor-pointer text-ibus-light-blue hover:text-ibus-yellow transition-colors">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+        </svg>
+      </a>
+
+      <!-- Logo Title -->
+      <h2 class="font-barlow font-black text-[38px] text-ibus-light-blue tracking-wide md:text-[44px]">I-BuS</h2>
+    </div>
+  </div>
+  
+  <!-- Wave Divider (Full Width) -->
+  <div class="bg-white relative h-[100px] w-full -mt-[1px] md:h-[130px]">
+    <svg class="absolute bottom-0 w-full h-full" viewBox="0 0 1440 200" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path d="M0,80 C360,180 720,20 1080,130 C1260,170 1350,190 1440,170 L1440,200 L0,200 Z" fill="#175AA5" opacity="0.4"/>
+      <path d="M0,110 C360,190 720,60 1080,150 C1260,180 1350,195 1440,185 L1440,200 L0,200 Z" fill="#175AA5" opacity="0.8"/>
+      <path d="M0,140 C360,210 720,110 1080,170 L1440,200 L0,200 Z" fill="#081E37"/>
+    </svg>
+  </div>
+
+  <!-- Bottom Dark Blue Area (Full Width) -->
+  <div class="flex-1 bg-ibus-blue px-6 pb-12 flex flex-col justify-between -mt-6 z-10 md:pb-16">
+    
+    <div class="w-full max-w-[600px] mx-auto flex flex-col items-center">
+      <!-- Avatar overlapping waves -->
+      <div class="w-[110px] h-[110px] rounded-full border-4 border-ibus-yellow bg-white flex justify-center items-center overflow-hidden shadow-lg -mt-[55px] z-20 md:w-[130px] md:h-[130px] md:-mt-[65px] relative">
+        <svg class="w-16 h-16 text-ibus-light-blue md:w-20 md:h-20" fill="currentColor" viewBox="0 0 20 20">
+          <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
+        </svg>
+        <!-- Gear icon overlay inside avatar -->
+        <div class="absolute bottom-2 right-2 bg-ibus-light-blue text-white rounded-full p-1 border-2 border-white">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+            <circle cx="12" cy="12" r="3" />
+          </svg>
+        </div>
+      </div>
+
+      <!-- Username / Role -->
+      <h1 class="font-inter font-bold text-[20px] text-white text-center mt-3 mb-6 md:text-[24px]">
+        Administrador
+      </h1>
+
+      <!-- Dashboard Title -->
+      <h2 class="font-barlow font-extrabold text-[24px] text-ibus-yellow text-center mb-6 tracking-wide md:text-[28px]">
+        Panel de Gestión
+      </h2>
+
+      <!-- Grid Buttons -->
+      <div class="grid grid-cols-2 gap-4 w-full max-w-[420px] md:grid-cols-3 md:max-w-full mt-2">
+        
+        <!-- Rutas -->
+        <a routerLink="/admin/rutas" class="flex flex-col items-center justify-center border border-white/20 rounded-xl p-5 bg-transparent hover:bg-white/5 active:scale-95 transition-all cursor-pointer h-[110px] md:h-[130px]">
+          <svg class="w-8 h-8 text-white mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+          </svg>
+          <span class="font-inter font-bold text-[14px] md:text-[15px]">Rutas</span>
+        </a>
+
+        <!-- Barrios -->
+        <a routerLink="/admin/barrios" class="flex flex-col items-center justify-center border border-white/20 rounded-xl p-5 bg-transparent hover:bg-white/5 active:scale-95 transition-all cursor-pointer h-[110px] md:h-[130px]">
+          <svg class="w-8 h-8 text-white mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+          </svg>
+          <span class="font-inter font-bold text-[14px] md:text-[15px]">Barrios</span>
+        </a>
+
+        <!-- Empresas -->
+        <a routerLink="/admin/empresas" class="flex flex-col items-center justify-center border border-white/20 rounded-xl p-5 bg-transparent hover:bg-white/5 active:scale-95 transition-all cursor-pointer h-[110px] md:h-[130px]">
+          <svg class="w-8 h-8 text-white mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+          </svg>
+          <span class="font-inter font-bold text-[14px] md:text-[15px]">Empresas</span>
+        </a>
+
+        <!-- Estadisticas -->
+        <a routerLink="/admin/estadisticas" class="flex flex-col items-center justify-center border border-white/20 rounded-xl p-5 bg-transparent hover:bg-white/5 active:scale-95 transition-all cursor-pointer h-[110px] md:h-[130px]">
+          <svg class="w-8 h-8 text-white mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+          </svg>
+          <span class="font-inter font-bold text-[14px] md:text-[15px]">Estadísticas</span>
+        </a>
+
+        <!-- Usuarios -->
+        <div class="flex flex-col items-center justify-center border border-white/20 rounded-xl p-5 bg-transparent opacity-60 h-[110px] md:h-[130px]">
+          <svg class="w-8 h-8 text-white mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+          </svg>
+          <span class="font-inter font-bold text-[14px] md:text-[15px]">Usuarios</span>
+        </div>
+
+        <!-- Notificaciones -->
+        <div class="flex flex-col items-center justify-center border border-white/20 rounded-xl p-5 bg-transparent opacity-60 h-[110px] md:h-[130px]">
+          <svg class="w-8 h-8 text-white mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+          </svg>
+          <span class="font-inter font-bold text-[14px] md:text-[15px]">Notificaciones</span>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Cerrar Sesión Button -->
+    <div class="flex flex-col items-center mt-12 gap-4">
+      <a routerLink="/auth/login" class="px-6 py-2.5 rounded-xl font-inter font-bold text-[15px] bg-ibus-red text-ibus-dark-red flex items-center gap-2 hover:bg-opacity-90 active:scale-95 transition-all shadow-md">
+        <svg class="w-5 h-5 text-ibus-dark-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
+        </svg>
+        <span>Cerrar Sesión</span>
+      </a>
+    </div>
+
+  </div>
+
+</div>
