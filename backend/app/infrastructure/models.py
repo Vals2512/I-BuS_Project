@@ -9,7 +9,7 @@ class TipoUsuarioDB(Base):
 class UsuarioDB(Base):
     __tablename__ = 'Usuario'
     idUsuario = Column(Integer, primary_key=True, index=True)
-    idTipoUsuario = Column(Integer, ForeignKey('TipoUsuario.idTipoUsuario'))
+    idTipoUsuario = Column('idTipoUsuario_id', Integer, ForeignKey('TipoUsuario.idTipoUsuario'))
     email = Column(String(100), unique=True)
     contrasena = Column(String(100))
 
@@ -31,15 +31,15 @@ class BarrioDB(Base):
 class RutaDB(Base):
     __tablename__ = 'Ruta'
     idRuta = Column(Integer, primary_key=True, index=True)
-    idEmpresa = Column(Integer, ForeignKey('Empresa.idEmpresa'))
-    inicioRuta_id = Column(Integer, ForeignKey('Barrio.idBarrio'))
-    destinoRuta_id = Column(Integer, ForeignKey('Barrio.idBarrio'))
+    idEmpresa = Column('idEmpresa_id', Integer, ForeignKey('Empresa.idEmpresa'))
+    inicioRuta_id = Column('inicioRuta_id', Integer, ForeignKey('Barrio.idBarrio'))
+    destinoRuta_id = Column('destinoRuta_id', Integer, ForeignKey('Barrio.idBarrio'))
     frecuencia = Column(String(50))
 
 class HorarioDB(Base):
     __tablename__ = 'Horario'
     idHorario = Column(Integer, primary_key=True, index=True)
-    idEmpresa = Column(Integer, ForeignKey('Empresa.idEmpresa'))
+    idEmpresa = Column('idEmpresa_id', Integer, ForeignKey('Empresa.idEmpresa'))
     horaSalida = Column(Time)
     horaLlegada = Column(Time)
 
@@ -51,12 +51,12 @@ class TiempoDB(Base):
 class DetalleRutaDB(Base):
     __tablename__ = 'DetalleRuta'
     idDetalleRuta = Column(Integer, primary_key=True, index=True)
-    idRuta = Column(Integer, ForeignKey('Ruta.idRuta'))
-    idTiempo = Column(Integer, ForeignKey('Tiempo.idTiempo'))
+    idRuta = Column('idRuta_id', Integer, ForeignKey('Ruta.idRuta'))
+    idTiempo = Column('idTiempo_id', Integer, ForeignKey('Tiempo.idTiempo'))
     cantidadPasajeros = Column(Integer)
 
 class RutaBarrioDB(Base):
     __tablename__ = 'RutaBarrio'
     idRutaBarrio = Column(Integer, primary_key=True, index=True)
-    idRuta = Column(Integer, ForeignKey('Ruta.idRuta'))
-    idBarrio = Column(Integer, ForeignKey('Barrio.idBarrio'))
+    idRuta = Column('idRuta_id', Integer, ForeignKey('Ruta.idRuta'))
+    idBarrio = Column('idBarrio_id', Integer, ForeignKey('Barrio.idBarrio'))
