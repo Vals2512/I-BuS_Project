@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  # Servicio del Frontend en Angular
+  frontend:
+    build:
+      context: ./frontend
+    ports:
+      - "4200:4200"
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+
+  # Servicio del Backend en FastAPI
+  backend:
+    build:
+      context: ./backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/app
+    env_file:
+      - ./backend/.env
