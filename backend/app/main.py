@@ -1,6 +1,7 @@
 from app.domain.models import Barrio, Empresa, Ruta, Horario, Tiempo, RutaCalcularRequest, RutaCalcularResponse
 from app.application.routing import calcular_ruta_optima
 from fastapi import FastAPI, Depends, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy.orm import Session
 from typing import List
 from app.infrastructure.database import get_db
@@ -12,6 +13,15 @@ from app.application.use_cases import (
 )
 
 app = FastAPI()
+
+# CORS
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"], 
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 # Endpoint GET /api/barrios
 @app.get("/api/barrios", response_model=List[Barrio])
